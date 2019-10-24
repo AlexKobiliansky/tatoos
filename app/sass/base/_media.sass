@@ -6,6 +6,22 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-sponsors
+    .btn-wrap
+      margin-top: 65px
+
+  .sponsor-item
+    width: calc(33.333% - 40px)
+    &-img
+      height: 350px
+      span
+        font-size: 13px
+        &:after
+          width: 70px
+          left: calc(50% - 35px)
+    &-name
+      font-size: 16px
+
   .team-left
     &-title
       font-size: 30px
@@ -121,6 +137,21 @@
 // ≥970px
 +media-breakpoint-down(md)
 
+  .sponsor-item
+    width: calc(33.333% - 30px)
+    &-img
+      height: 270px
+      margin-bottom: 35px
+      span
+        font-size: 10px
+        &:after
+          height: 1px
+          width: 54px
+          left: calc(50% - 27px)
+          bottom: -15px
+    &-name
+      font-size: 14px
+
   .team-left
     &-title
       padding-right: 50px
@@ -191,6 +222,16 @@
 // ≥750px
 +media-breakpoint-down(sm)
 
+
+  .sponsor-item
+    width: calc(50% - 25px)
+    &-img
+      height: 270px
+    &-name
+      font-size: 16px
+    &:nth-child(3)
+      display: none
+
   .s-team
     background-image: none
     padding-top: 0
@@ -259,6 +300,14 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .s-sponsors
+    padding-top: 30px
+
+  .sponsor-item
+    width: calc(50% - 15px)
+    &-name
+      font-size: 14px
+
   .team-left
     &-title
       font-size: 20px
@@ -303,6 +352,18 @@
 
 
 @media screen and (max-width: 390px)
+
+  .s-sponsors
+    .btn-wrap
+      margin-top: 0
+
+  .sponsors-wrap
+    flex-direction: column
+    align-items: center
+
+  .sponsor-item
+    width: 190px
+    margin-bottom: 45px
 
   .bestpigments-wrap
     justify-content: center

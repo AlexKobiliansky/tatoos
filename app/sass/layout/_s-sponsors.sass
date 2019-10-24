@@ -1,0 +1,59 @@
+.s-sponsors
+  .btn-wrap
+    text-align: center
+    margin-top: 85px
+
+.sponsors-wrap
+  display: flex
+  justify-content: space-between
+
+.sponsor-item
+  width: calc(33.333% - 50px)
+  &-img
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 430px
+    +bg-cover
+    position: relative
+    border-radius: 5px
+    box-shadow: 0 0 20px 2px rgba(#000, .2)
+    overflow: hidden
+    margin-bottom: 45px
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+      bottom: 0
+      top: 0
+      background-color: #000
+      opacity: 0
+      +mt(.3s)
+    span
+      font-size: 16px
+      text-transform: uppercase
+      letter-spacing: 0.08em
+      color: #fff
+      position: relative
+      +mt(.3s)
+      opacity: 0
+      &:after
+        content: ''
+        position: absolute
+        width: 84px
+        height: 2px
+        background-color: #fff
+        bottom: -24px
+        left: calc(50% - 42px)
+    &:hover
+      span
+        opacity: 1
+      &:before
+        opacity: .7
+  &-name
+    padding: 0 20px
+    text-align: center
+    text-transform: uppercase
+    font-size: 20px
+    letter-spacing: 0.08em
