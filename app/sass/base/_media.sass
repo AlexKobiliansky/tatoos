@@ -137,6 +137,14 @@
 // ≥970px
 +media-breakpoint-down(md)
 
+  .s-passion
+    padding-bottom: 50px
+
+  .passion-img
+    max-width: 380px
+    position: relative
+    top: 50px
+
   .sponsor-item
     width: calc(33.333% - 30px)
     &-img
@@ -222,6 +230,24 @@
 // ≥750px
 +media-breakpoint-down(sm)
 
+  .s-passion
+    padding-bottom: 0
+    .btn-wrap
+      text-align: center
+      margin-bottom: 50px
+
+  .passion-title
+    font-size: 60px
+    padding: 0 50px
+    text-align: center
+    &:after
+      width: 170px
+      left: calc(50% - 85px)
+
+  .passion-img
+    margin-left: auto
+    margin-right: auto
+    top: 0
 
   .sponsor-item
     width: calc(50% - 25px)
@@ -299,6 +325,17 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .passion-img
+    max-width: 100%
+
+
+  .s-passion
+    .btn
+      width: 220px
+
+  .passion-title
+    padding: 0
 
   .s-sponsors
     padding-top: 30px
