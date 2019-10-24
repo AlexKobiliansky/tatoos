@@ -6,6 +6,30 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-bestpigments
+    .btn-wrap
+      margin-top: 20px
+
+  .bestpigment-item
+    width: 188px
+    height: 188px
+    margin-bottom: 55px
+    &-title
+      font-size: 14px
+      margin-bottom: 30px
+      span
+        font-size: 12px
+    &-content
+      padding: 18px
+    &-bottom
+      padding-top: 30px
+    &-cost
+      font-size: 20px
+    .add-to-cart
+      .svg
+        width: 32px
+        height: auto
+
   .bestset-item
     margin-right: 20px
     width: 296px
@@ -81,6 +105,10 @@
 +media-breakpoint-down(md)
 
 
+  .bestpigment-item
+    &:nth-child(7), &:nth-child(8)
+      display: none
+
   .bestset-item
     margin-right: 30px
     width: 410px
@@ -133,6 +161,12 @@
 // ≥750px
 +media-breakpoint-down(sm)
 
+  .bestpigment-item
+    width: calc(50% - 30px)
+    margin-bottom: 60px
+    &:nth-child(5), &:nth-child(6)
+      display: none
+
   .bestset-item
     margin-right: 0
     width: 100%
@@ -172,6 +206,10 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .bestpigment-item
+    width: calc(50% - 15px)
+    margin-bottom: 30px
+
   .section-title
     font-size: 25px
     &:before
@@ -195,6 +233,12 @@
 
 
 @media screen and (max-width: 390px)
+
+  .bestpigments-wrap
+    justify-content: center
+  .bestpigment-item
+    width: 190px
+    margin-bottom: 45px
 
   .bestset-item
     height: 195px
