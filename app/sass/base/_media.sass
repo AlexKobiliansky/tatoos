@@ -6,6 +6,50 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .bestset-item
+    margin-right: 20px
+    width: 296px
+    height: 290px
+    margin-bottom: 20px
+
+
+  .set-1
+    width: 404px
+    height: 305px
+    .bestset-item-content
+      padding: 70px
+
+  .set-2, .set-3
+    width: 243px
+    height: 235px
+    .bestset-item-content
+      padding: 40px
+
+  .set-3
+    margin-right: 0
+
+  .set-4
+    width: 506px
+    margin-right: 0
+    height: 460px
+    .bestset-item-content
+      padding: 70px 120px
+
+  .set-5
+    width: 404px
+    height: 390px
+    .bestset-item-content
+      padding: 70px
+
+  .set-8
+    margin-right: 0
+
+  .section-title
+    font-size: 30px
+    &:before, &:after
+      top: 16px
+
+
   .intro-logo
     left: calc(50vw - 940px/2)
 
@@ -35,6 +79,29 @@
 
 // ≥970px
 +media-breakpoint-down(md)
+
+
+  .bestset-item
+    margin-right: 30px
+    width: 410px
+    height: 305px
+    margin-bottom: 30px
+
+
+  .set-1
+    .bestset-item-content
+      padding: 70px
+
+  .set-2, .set-4
+    width: 270px
+    margin-right: 0
+    .bestset-item-content
+      padding: 40px
+
+  .set-5, .set-6, .set-7, .set-8
+    display: none
+
+
   .intro-logo
     left: calc(50vw - 710px/2)
 
@@ -65,6 +132,17 @@
 
 // ≥750px
 +media-breakpoint-down(sm)
+
+  .bestset-item
+    margin-right: 0
+    width: 100%
+    height: 305px
+    margin-bottom: 45px
+
+  .s-bestsets
+    .btn-wrap
+      margin-top: 25px
+
   .intro-logo
     width: 140px
     left: calc(50% - 70px)
@@ -93,6 +171,16 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .section-title
+    font-size: 25px
+    &:before
+      display: none
+    &:after
+      top: auto
+      bottom: -35px
+      right: calc(50% - 50px)
+
   .intro-slider
     .owl-dots
       left: 15px
@@ -102,11 +190,43 @@
   .btn
     font-size: 14px
     padding: 13px
-    min-width: 185px
+    width: 185px
 
 
 
 @media screen and (max-width: 390px)
+
+  .bestset-item
+    height: 195px
+    margin-bottom: 30px
+    &-content
+      padding: 50px
+    &-title
+      font-size: 16px
+      margin-bottom: 30px
+      span
+        margin-bottom: 10px
+    &-bottom
+      padding-top: 30px
+      .svg
+        width: 30px
+        height: auto
+        top: -5px
+    &-cost
+      font-size: 18px
+
+  .set-1
+    .bestset-item-content
+      padding: 50px
+
+  .section-title
+    font-size: 20px
+    margin-bottom: 70px
+    &:after
+      top: auto
+      bottom: -30px
+      right: calc(50% - 50px)
+
 
   .btn
     font-size: 12px

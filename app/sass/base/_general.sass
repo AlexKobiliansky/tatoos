@@ -63,5 +63,29 @@ ul
   display: none!important
 
 // ======= END TEMPLATE STYLES =======
+section
+  padding: 70px 0
+  +bg-cover
+
+.section-title-wrap
+  text-align: center
+
+.section-title
+  position: relative
+  display: inline-block
+  font-weight: normal
+  font-size: 35px
+  margin-bottom: 85px
+  &:before, &:after
+    content: ''
+    height: 2px
+    width: 100px
+    background-color: #a2a2a2
+    position: absolute
+    top: 19px
+  &:before
+    left: -130px
+  &:after
+    right: -130px
 
 

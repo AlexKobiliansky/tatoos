@@ -105,6 +105,13 @@ $(document).ready(function(){
     });
 
 
+
+    $('.bestsets-wrap').masonry({
+        itemSelector: '.bestset-item',
+        columnWidth: 1,
+    });
+
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);

@@ -1,0 +1,131 @@
+.s-bestsets
+  .btn-wrap
+    text-align: center
+    margin-top: 40px
+
+.bestsets-wrap
+  //display: flex
+  //justify-content: space-between
+
+.bestset-item
+  display: inline-block
+  height: 350px
+  background-color: #ddd
+  font-size: 0
+  +bg-cover
+  position: relative
+  border-radius: 5px
+  box-shadow: 0 0 20px 2px rgba(#000, .2)
+  overflow: hidden
+  margin-bottom: 33px
+  margin-right: 33px
+  width: 358px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    top: 0
+    background-color: #000
+    opacity: 0
+    +mt(.3s)
+  &-content
+    display: flex
+    //align-items: center
+    justify-content: center
+    flex-direction: column
+    position: relative
+    z-index: 2
+    color: #fff
+    height: 100%
+    padding: 70px
+    +mt(.3s)
+    opacity: 1
+  &-title
+    font-size: 18px
+    font-weight: 700
+    display: inline-block
+    margin-bottom: 45px
+    position: relative
+    top: -100%
+    +mt(.3s)
+    span
+      font-size: 14px
+      font-weight: normal
+      display: block
+      margin-bottom: 20px
+  &-bottom
+    border-top: 2px solid transparent
+    display: flex
+    padding-top: 45px
+    font-size: 25px
+    font-weight: 700
+    justify-content: space-between
+    +mt(.3s)
+    .svg
+      fill: $accent
+      position: relative
+      top: -3px
+  &-cost
+    position: relative
+    left: -200%
+    bottom: -200%
+    +mt(.3s)
+  .add-to-cart
+    position: relative
+    right: -200%
+    bottom: -200%
+    +mt(.3s)
+    .svg
+      +mt(.3s)
+    &:hover
+      .svg
+        fill: lighten($accent, 8%)
+  &:hover
+    &:before
+      opacity: .7
+    .bestset-item-title
+      top: 0
+    .bestset-item-cost
+      bottom: 0
+      left: 0
+    .bestset-item-bottom
+      border-color: #fff
+    .add-to-cart
+      right: 0
+      bottom: 0
+
+
+//sets-customization
+.set-1
+  width: 488px
+  height: 370px
+  .bestset-item-content
+    padding: 100px 150px
+
+.set-2, .set-3
+  width: 293px
+  height: 287px
+  .bestset-item-content
+    padding: 40px
+
+.set-3
+  margin-right: 0
+
+.set-4
+  width: 619px
+  margin-right: 0
+  height: 560px
+  .bestset-item-content
+    padding: 150px 200px
+
+.set-5
+  width: 488px
+  height: 477px
+  .bestset-item-content
+    padding: 100px 150px
+
+.set-8
+  margin-right: 0
+
