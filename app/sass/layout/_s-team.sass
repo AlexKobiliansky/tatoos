@@ -1,0 +1,54 @@
+.s-team
+  background-image: url('../img/bg-grey.jpg')
+  +bg-cover
+  padding-bottom: 20px
+
+.team-left
+  &-title
+    font-size: 35px
+    position: relative
+    margin-bottom: 125px
+    padding-right: 100px
+    &:after
+      content: ''
+      position: absolute
+      width: 165px
+      height: 2px
+      background-color: #a2a2a2
+      left: 0
+      bottom: -55px
+  &-desc
+    font-size: 16px
+    padding-right: 100px
+  .btn
+    margin-top: 150px
+
+.team-items-wrap
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+
+.team-item
+  width: calc(50% - 30px)
+  margin-bottom: 60px
+  &-img
+    height: 240px
+    +bg-cover
+    overflow: hidden
+    border-radius: 5px
+    box-shadow: 0 0 20px 2px rgba(#000, .2)
+    margin-bottom: 25px
+  &-content
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+  &-country
+    font-size: 16px
+    font-weight: 700
+    color: $accent
+    text-transform: uppercase
+    width: 40px
+    text-align: right
+  &-name
+    width: calc(100% - 40px)
+    font-size: 20px
