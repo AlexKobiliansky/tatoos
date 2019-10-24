@@ -6,23 +6,153 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .intro-logo
+    left: calc(50vw - 940px/2)
+
+  .intro-slider
+    .owl-dots
+      left: calc(50vw - 940px/2)
+      top: 250px
+    .owl-item
+      img
+        width: 540px
+
+  .intro-slide
+    h1
+      font-size: 35px
+      padding-left: 50px
+      margin-top: 150px
+    .btn
+      margin-left: 50px
+
+
+
   .hamburger
     display: inline-block
 
   .main-mnu
     display: none
 
-// ≥992px
+// ≥970px
 +media-breakpoint-down(md)
+  .intro-logo
+    left: calc(50vw - 710px/2)
 
-// ≥768px
+  .intro-slider
+    .owl-dots
+      left: calc(50vw - 710px/2)
+      top: 275px
+    &:after
+      content: ''
+      position: absolute
+      width: 2px
+      height: 155px
+      background-color: #a2a2a2
+      right: calc(50vw - 710px/2)
+      top: 275px
+  .intro-slide
+    h1
+      margin-top: 0
+      padding-left: 235px
+      padding-right: 0
+      border-left: 0
+      margin-bottom: 0
+    &-right
+      flex-direction: column
+      .btn
+        margin-left: 0
+        margin-top: 30px
+
+// ≥750px
 +media-breakpoint-down(sm)
+  .intro-logo
+    width: 140px
+    left: calc(50% - 70px)
+
+  .intro-slider
+    .owl-item
+      img
+        width: calc(100% - 60px)
+        margin-left: auto
+        margin-right: auto
+    .owl-dots
+      left: calc(50vw - 530px/2)
+      top: 390px
+    &:after
+      right: calc(50vw - 500px/2)
+      top: 390px
+
+
+  .intro-slide
+    h1
+      font-size: 25px
+      margin-top: 130px
+      margin-bottom: 20px
+      padding-left: 0
+      text-align: center
 
 // ≥480px
 +media-breakpoint-down(xs)
+  .intro-slider
+    .owl-dots
+      left: 15px
+    &:after
+      right: 15px
+
+  .btn
+    font-size: 14px
+    padding: 13px
+    min-width: 185px
+
 
 
 @media screen and (max-width: 390px)
+
+  .btn
+    font-size: 12px
+    padding: 11px
+
+  .intro-slider
+    .owl-dots
+      left: 0
+      width: 100%
+      text-align: center
+      bottom: 125px
+      top: auto
+      button.owl-dot
+        display: inline-block
+        margin: 0 5px
+        width: 16px
+        height: 16px
+
+
+    .owl-item
+      img
+        width: 100%
+    &:after
+      display: none
+
+  .intro-slide
+    padding-bottom: 55px
+    h1
+      font-size: 20px
+      margin-bottom: 40px
+      position: relative
+      &:after
+        content: ''
+        position: absolute
+        width: 106px
+        height: 2px
+        background-color: #a2a2a2
+        bottom: -20px
+        left: calc(50% - 53px)
+    &-left
+      padding-bottom: 0
+    .btn
+      margin-top: 95px
+
+
+
   .top-line
     .call
       font-size: 20px

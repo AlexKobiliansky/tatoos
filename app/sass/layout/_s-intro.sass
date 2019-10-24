@@ -1,0 +1,65 @@
+.s-intro
+  background-image: url('../img/bg-grey.jpg')
+  display: flex
+  align-items: center
+  +bg-cover
+  position: relative
+
+.intro-logo
+  position: absolute
+  z-index: 2
+  top: 30px
+  left: calc(50vw - 1140px/2)
+  img
+    width: 165px
+    height: auto
+
+.intro-slider
+  position: relative
+  .owl-item
+    img
+      width: auto
+  .owl-stage
+    display: flex
+    align-items: center
+  .owl-dots
+    position: absolute
+    left: calc(50vw - 1140px/2)
+    top: 270px
+    button.owl-dot
+      display: block
+      width: 20px
+      height: 20px
+      border: 2px solid $accent
+      margin-bottom: 13px
+      cursor: pointer
+      background-color: transparent
+      border-radius: 3px
+      +mt(.3s)
+      &.active
+        border-color: $text
+        background-color: $accent
+
+.intro-slide
+  padding: 70px 0
+  overflow: hidden
+  &-left
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding-bottom: 35px
+    .btn
+      justify-self: flex-end
+      margin-top: auto
+      margin-left: 65px
+    h1
+      font-weight: normal
+      font-size: 40px
+      padding-right: 30px
+      padding-left: 65px
+      border-left: 2px solid #a2a2a2
+      margin-bottom: 50px
+      margin-top: 200px
+  &-right
+    display: flex
+    align-items: center

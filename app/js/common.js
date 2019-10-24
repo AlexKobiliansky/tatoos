@@ -46,6 +46,31 @@ $(document).ready(function(){
      */
 
 
+    $('.intro-slider').owlCarousel({
+        loop:true,
+        nav: false,
+        items: 1,
+        margin: 30,
+        dots: true,
+        autoHeight: false,
+        // autoplay: true,
+        // autoplayTimeout: 7000,
+        mouseDrag: false,
+        // animateIn: "fadeIn",
+        animateOut: "fadeOut",
+
+        responsive : {
+            // breakpoint from 0 up
+            0 : {
+                touchDrag: true
+            },
+            // breakpoint from 768 up
+            992 : {
+                touchDrag: false
+            }
+        }
+
+    });
 
     $('img.svg').each(function(){
         var $img = jQuery(this);
