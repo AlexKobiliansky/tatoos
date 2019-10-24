@@ -1,0 +1,52 @@
+.s-blog
+  background-image: url('../img/bg-grey.jpg')
+  +bg-cover
+  .btn-wrap
+    text-align: center
+    margin-top: 80px
+
+.blog-items-wrap
+  display: flex
+  justify-content: space-between
+
+.blog-item
+  +bg-cover
+  position: relative
+  border-radius: 5px
+  box-shadow: 0 0 20px 2px rgba(#000, .2)
+  overflow: hidden
+  width: 230px
+  height: 245px
+  &-preview
+    position: absolute
+    left: 0
+    top: 145px
+    width: 100%
+    height: 100%
+    background-color: rgba(#000, .8)
+    color: #fff
+    padding: 20px
+    font-size: 12px
+    +mt(.5s)
+  &-date
+    color: $accent
+    margin-bottom: 15px
+  &-title
+    font-size: 16px
+    margin-bottom: 25px
+    height: 35px
+    overflow: hidden
+  &-excerpt
+    line-height: 1
+    font-size: 12px
+    margin-bottom: 35px
+  .btn-wrap
+    text-align: center
+    margin-top: 0
+  .btn
+    font-size: 10px
+    padding: 8px
+    width: 140px
+  &:hover
+    .blog-item-preview
+      top: 0

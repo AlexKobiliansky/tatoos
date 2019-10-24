@@ -6,6 +6,11 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+
+  .blog-item
+    &:nth-child(4)
+      display: none
+
   .s-sponsors
     .btn-wrap
       margin-top: 65px
@@ -137,6 +142,21 @@
 // ≥970px
 +media-breakpoint-down(md)
 
+  .blog-item
+    width: 200px
+    height: 210px
+    &-preview
+      font-size: 10px
+      padding: 12px 18px
+      top: 145px
+    &-date
+      margin-bottom: 5px
+    &-title
+      font-size: 13px
+      height: 30px
+      margin-bottom: 15px
+
+
   .s-passion
     padding-bottom: 50px
 
@@ -229,6 +249,22 @@
 
 // ≥750px
 +media-breakpoint-down(sm)
+
+  .s-blog
+    .btn-wrap
+      margin-top: 15px
+
+  .blog-items-wrap
+    flex-wrap: wrap
+    justify-content: center
+
+  .blog-item
+    margin-bottom: 50px
+    &:nth-child(2n-1)
+      margin-right: 50px
+    &:nth-child(4)
+      display: block
+
 
   .s-passion
     padding-bottom: 0
@@ -325,6 +361,19 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .blog-items-wrap
+    justify-content: space-between
+
+  .blog-items-wrap
+    flex-direction: column
+    align-items: center
+
+  .blog-item
+    &:nth-child(2n-1)
+      margin-right: 0
+    &:nth-child(4)
+      display: none
 
   .passion-img
     max-width: 100%
