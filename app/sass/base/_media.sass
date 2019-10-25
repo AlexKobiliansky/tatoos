@@ -6,6 +6,21 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .pagehead-wrap
+    position: relative
+    padding-bottom: 30px
+    margin-bottom: 22px
+
+  .pagehead-item
+    width: 50%
+  .page-title
+    font-size: 30px
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    &:after
+      bottom: -30px
 
   .footer-content
     padding-left: 210px
@@ -274,6 +289,29 @@
 // ≥750px
 +media-breakpoint-down(sm)
 
+  .pagehead-wrap
+    flex-direction: column
+    margin-bottom: 0
+    padding-bottom: 22px
+
+  .pagehead-item
+    width: 100%
+    text-align: center
+    order: 1
+    &.logo
+      margin-bottom: 20px
+      img
+        margin-left: auto
+        margin-right: auto
+
+  .breadcrumbs
+    margin-bottom: 35px
+
+  .page-title
+    font-size: 25px
+    position: relative
+    order: 2
+
   .main-foot
     padding: 50px 0 70px
 
@@ -526,6 +564,14 @@
 
 
 @media screen and (max-width: 390px)
+
+  .page-title
+    font-size: 20px
+    &:after
+      bottom: -20px
+
+  .pagehead-wrap
+    padding-bottom: 12px
 
   .foot-mnu
     font-size: 12px
