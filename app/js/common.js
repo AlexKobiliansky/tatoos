@@ -111,6 +111,7 @@ $(document).ready(function(){
         columnWidth: 1,
     });
 
+    $('.cabinet-tabs').tabs();
 
     $('.preloader').fadeOut();
 

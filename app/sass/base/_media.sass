@@ -6,6 +6,15 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .orderlist
+    &-title
+      font-size: 30px
+    &-sum
+      font-size: 18px
+    &-top
+      margin-bottom: 30px
+
+
   .pagehead-wrap
     position: relative
     padding-bottom: 30px
@@ -160,6 +169,32 @@
 // ≥970px
 +media-breakpoint-down(md)
 
+  .profile-item
+    &-title
+      font-size: 18px
+      margin-bottom: 22px
+    .btn
+      width: 160px
+      font-size: 12px
+      padding: 12px 0 10px
+
+  .orderlist
+    &-sum
+      font-size: 14px
+
+  .orderlist-item
+    &-num
+      font-size: 18px
+    &-btn
+      .btn
+        width: 110px
+
+  .cabinet-tabs
+    li
+      font-size: 16px
+      .svg
+        height: 50px
+
   .footer-content
     padding-bottom: 120px
     padding-left: 155px
@@ -288,6 +323,61 @@
 
 // ≥750px
 +media-breakpoint-down(sm)
+
+  .profile-wrap
+    flex-wrap: wrap
+
+  .profile-item
+    width: 49%
+    margin-bottom: 45px
+    &:last-child
+      margin-bottom: 0
+    &-title
+      font-size: 16px
+
+  .orderlist-item
+    flex-wrap: wrap
+    &>div
+      width: 50%
+      order: 3
+    &-num
+      order: 1!important
+      margin-bottom: 10px
+    &-date
+      width: 100%!important
+      font-size: 12px
+      text-align: left
+    &-status
+      text-align: left
+    &-btn
+      margin-left: auto
+    &-cost
+      order: 2!important
+      text-align: right
+
+
+
+
+
+  .orderlist
+    &-top
+      flex-direction: column
+      text-align: center
+      margin-bottom: 65px
+      &:after
+        top: auto
+        bottom: -35px
+    &-title
+      font-size: 25px
+      margin-bottom: 5px
+
+  .cabinet-tabs
+    ul
+      flex-wrap: wrap
+      margin-bottom: 0
+    li
+      width: 50%
+      margin-bottom: 60px
 
   .pagehead-wrap
     flex-direction: column
@@ -488,6 +578,11 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .cabinet-tabs
+    ul
+      margin-left: 0
+      margin-right: 0
+
   .blog-items-wrap
     justify-content: space-between
 
@@ -564,6 +659,11 @@
 
 
 @media screen and (max-width: 390px)
+
+  .profile-item
+    width: 100%
+    padding-left: 40px
+    padding-right: 40px
 
   .page-title
     font-size: 20px

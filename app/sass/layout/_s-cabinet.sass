@@ -1,0 +1,112 @@
+.s-cabinet
+  padding: 55px 0 65px
+
+.cabinet-tabs
+  ul
+    margin-left: 85px
+    margin-right: 85px
+    display: flex
+    justify-content: space-between
+    margin-bottom: 50px
+  li
+    text-align: center
+    font-size: 18px
+    a
+      color: $text
+    .svg
+      +mt(.3s)
+      height: 55px
+      width: auto
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 18px
+      display: block
+    &.ui-tabs-active, &:hover
+      .svg
+        fill: $accent
+
+.orderlist
+  padding-top: 20px
+  &-top
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 45px
+    &:after
+      content: ''
+      position: absolute
+      width: 100px
+      height: 2px
+      background-color: #a2a2a2
+      left: calc(50% - 50px)
+      top: 16px
+  &-title
+    font-size: 35px
+  &-sum
+    text-align: right
+    font-size: 20px
+    span
+      font-weight: 700
+
+
+.orderlist-item
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 8px 0 20px
+  margin-bottom: 10px
+  border-bottom: 2px solid #d1d1d1
+  &>div
+    width: 20%
+  &-num
+    font-size: 20px
+  &-date
+    text-align: center
+  &-status
+    text-align: center
+  &-cost
+    font-size: 16px
+    font-weight: 700
+    text-align: center
+  &-btn
+    text-align: right
+    .btn
+      font-size: 10px
+      padding: 9px 20px
+      width: 155px
+      border-color: $accent
+      background-color: transparent
+      border-width: 2px
+      color: $text
+      &:hover
+        background-color: $accent
+        color: #fff
+      &.disabled
+        pointer-events: none
+        border-color: #a2a2a2
+
+
+.profile
+  padding-top: 70px
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    width: 100px
+    height: 2px
+    background-color: #a2a2a2
+    left: calc(50% - 50px)
+    top: 15px
+
+.profile-wrap
+  display: flex
+  justify-content: space-between
+
+.profile-item
+  width: 33.333%
+  &-title
+    font-size: 20px
+    margin-bottom: 32px
+  &-desc
+    margin-bottom: 35px
