@@ -7,6 +7,9 @@
 +media-breakpoint-down(lg)
 
 
+  .footer-content
+    padding-left: 210px
+
   .blog-item
     &:nth-child(4)
       display: none
@@ -142,6 +145,27 @@
 // ≥970px
 +media-breakpoint-down(md)
 
+  .footer-content
+    padding-bottom: 120px
+    padding-left: 155px
+
+  .footer-wrap
+    &:before
+      bottom: 75px
+      left: calc(50% - 37.5px)
+
+  .foot-socials
+    bottom: -5px
+    width: 100%
+    text-align: center
+    .soc-item
+      margin: 0 6px
+
+  .foot-item
+    .call
+      font-size: 20px
+
+
   .blog-item
     width: 200px
     height: 210px
@@ -249,6 +273,50 @@
 
 // ≥750px
 +media-breakpoint-down(sm)
+
+  .main-foot
+    padding: 50px 0 70px
+
+  .footer-content
+    flex-wrap: wrap
+    padding-left: 0
+    padding-bottom: 320px
+
+  .footer-wrap
+    &:before
+      bottom: 270px
+
+  .totop
+    top: auto
+    bottom: 0
+    left: calc(50% - 22.5px)
+
+  .footlink
+    bottom: 100px
+    width: 100%
+    text-align: center
+
+  .copyright
+    bottom: 125px
+    width: 100%
+    text-align: center
+
+  .foot-socials
+    bottom: 180px
+
+  .foot-item
+    width: 45%
+    order: 2
+    &-3
+      width: 100%
+      order: 1
+      text-align: center
+      margin-bottom: 45px
+      justify-self: flex-start
+      align-self: flex-start
+    .call, .mail
+      text-align: center
+
 
   .s-contacts
     padding: 50px 0
@@ -458,6 +526,16 @@
 
 
 @media screen and (max-width: 390px)
+
+  .foot-mnu
+    font-size: 12px
+
+  .foot-item
+    width: 48%
+    &-3
+      width: 100%
+    .user-options
+      font-size: 12px
 
   .s-sponsors
     .btn-wrap

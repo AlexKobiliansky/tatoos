@@ -112,6 +112,9 @@ $(document).ready(function(){
     });
 
 
+    $('.preloader').fadeOut();
+
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);
@@ -134,7 +137,9 @@ $(document).ready(function(){
 
 
 
-
+    $('#totop').click(function() {
+        $('body,html').animate({scrollTop:0},600);
+    });
 
 
 

@@ -1,0 +1,112 @@
+.main-foot
+  padding: 95px 0 75px
+  background-color: #000
+  color: #fff
+  .svg
+    +mt(.3s)
+    fill: #fff
+  a
+    +mt(.3s)
+    color: #fff
+    &:hover
+      color: $accent
+
+
+.footer-wrap
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    width: 70px
+    height: 2px
+    background-color: #fff
+    left: 0
+    bottom: 120px
+
+.totop
+  position: absolute
+  left: 0
+  top: 0
+  cursor: pointer
+  &:hover
+    .svg
+      fill: grey
+
+
+.footlink
+  position: absolute
+  bottom: 0
+  left: 0
+  font-size: 16px
+  z-index: 2
+
+.copyright
+  position: absolute
+  bottom: 0
+  right: 0
+  font-size: 16px
+  z-index: 2
+
+.foot-socials
+  position: absolute
+  right: 0
+  bottom: 100px
+  .soc-item
+    display: inline-block
+    margin-left: 12px
+    &.insta
+      &:hover
+        .svg
+          fill: #be365b
+    &.facebook
+      &:hover
+        .svg
+          fill: #4266b2
+    &.vk
+      &:hover
+        .svg
+          fill: #4a75a8
+    &.youtube
+      &:hover
+        .svg
+          fill: #eb2803
+
+.footer-content
+  padding-left: 290px
+  padding-bottom: 100px
+  display: flex
+  justify-content: space-between
+
+.foot-item
+  width: 25%
+  .user-options
+    a
+      display: inline-block
+      line-height: 1
+      &:nth-child(2n-1)
+        padding-right: 8px
+        border-right: 2px solid #fff
+      &:nth-child(2n)
+        padding-left: 4px
+  .call
+    display: block
+    text-align: right
+    font-weight: 700
+    font-size: 25px
+    margin-bottom: 3px
+  .mail
+    display: block
+    text-align: right
+  &-3
+    width: 35%
+
+
+.foot-mnu
+  a
+    display: inline-block
+    position: relative
+    margin-bottom: 12px
+    +mt(0)
+    &:hover
+      text-decoration: underline
+
