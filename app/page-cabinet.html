@@ -252,12 +252,62 @@
                     </div>
                 </div>
                 <div id="tabs-3">
-                    3
-                </div>
+                    <div class="settings">
+                        <div class="settings-wrap">
+                            <!-- settings-item -->
+                            <div class="settings-item">
+                                <div class="settings-item-title">Сменить пароль</div>
+                                <!-- form -->
+                                <form class="form form-settings">
+
+                                    <label>
+                                        <input type="password" placeholder="Старый пароль" name="old_pass" autocomplete="off"
+                                               data-validation="required" >
+                                    </label>
+
+                                    <label>
+                                        <input type="password" placeholder="Новый пароль" name="pass" autocomplete="off"
+                                               data-validation="strength" data-validation-strength="2">
+                                    </label>
+
+                                    <label>
+                                        <input name="pass_confirm" type="password" placeholder="Повторите новый пароль" data-validation="confirmation" data-validation-confirm="pass">
+                                    </label>
+
+                                    <button type="submit" class="btn btn-accent">Изменить пароль</button>
+
+                                </form>
+                                <!-- /form -->
+                            </div>
+                            <!-- /settings-item -->
+
+
+                            <!-- settings-item -->
+                            <div class="settings-item">
+                                <div class="settings-item-title">Новости и уведомления</div>
+                                    <form class="form">
+                                        <label>
+                                            <input type="checkbox"> <span>Отправлять по СМС</span>
+                                        </label>
+
+                                        <label>
+                                            <input type="checkbox"> <span>Отправлять по СМС</span>
+                                        </label>
+
+                                        <button type="submit" class="btn btn-accent">Сохранить</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- /settings-item -->
+                        </div>
+                    </div>
 
                 <div id="tabs-4">
                     4
                 </div>
+                </div>
+
+
                 
                 
             </div>

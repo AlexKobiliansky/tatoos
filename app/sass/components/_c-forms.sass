@@ -1,0 +1,58 @@
+form
+  label
+    display: block
+    margin-bottom: 20px
+    span
+      vertical-align: super
+  input[type="password"]
+    font-family: caption
+  input[type="checkbox"]
+    width: auto
+  input, textarea
+    width: 100%
+    font-size: 16px
+    line-height: 1
+    color: #5a5a5a
+    padding: 15px 22px 13px
+    border-color: transparent
+    background-color: #eee
+    border-radius: 5px
+    &::placeholder
+      color: #5a5a5a
+      font-family: $default-font
+    &.error
+      border-color: red!important
+      color: red!important
+      &::placeholder
+        color: red!important
+  .form-error
+    display: none!important
+
+
+
+//checkbox customization
+.jq-checkbox
+  width: 27px
+  height: 27px
+  background: #eee
+  box-shadow: none
+  border: none!important
+  border-radius: 5px
+  margin-right: 12px
+
+
+.jq-checkbox.checked .jq-checkbox__div
+  width: 13px
+  height: 11px
+  background-image: url('../img/icons/check-angle.svg')
+  +bg-cover
+  transform: none
+  border: none
+  margin: 0
+  position: absolute
+  left: calc(50% - 6.5px)
+  top: calc(50% - 5.5px)
+//end checkbox customization
+
+
+
