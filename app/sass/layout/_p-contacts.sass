@@ -1,0 +1,38 @@
+.pcontacts-wrap
+  display: flex
+  justify-content: center
+
+.pcontact-item
+  width: 330px
+  margin: 0 80px
+  &:nth-child(2)
+    width: 390px
+  &-title
+    font-size: 25px
+    margin-bottom: 20px
+  .btn
+    margin-top: 40px
+  p
+    margin-bottom: 30px
+    line-height: 1.4
+
+.contact-block
+  &:last-child
+    p
+      margin-bottom: 0
+  a
+    color: $text
+    +mt(.3s)
+    &:hover
+      color: $accent
+  &.gutter
+    margin-top: 100px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      width: 100px
+      height: 2px
+      background-color: #a2a2a2
+      left: 0
+      top: -50px

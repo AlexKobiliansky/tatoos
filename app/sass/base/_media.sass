@@ -6,6 +6,12 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .pcontact-item
+    margin: 0 30px
+    &-title
+      font-size: 20px
+      margin-bottom: 18px
+
   .orderlist
     &-title
       font-size: 30px
@@ -331,6 +337,41 @@
 // ≥750px
 +media-breakpoint-down(sm)
 
+  .p-contacts
+    padding-top: 30px
+
+  .pcontacts-wrap
+    flex-direction: column
+    align-items: center
+
+  .pcontact-item
+    width: 350px
+    .pcontact-item-title
+      margin-bottom: 25px
+    .btn-wrap
+      text-align: center
+    &:first-child
+      position: relative
+      margin-bottom: 80px
+      .pcontact-item-title
+        text-align: center
+      &:after
+        content: ''
+        position: absolute
+        width: 100px
+        height: 2px
+        background-color: #a2a2a2
+        left: calc(50% - 50px)
+        bottom: -40px
+    &:nth-child(2)
+      width: 350px
+
+  .contact-block.gutter
+    margin-top: 80px
+    &:before
+      top: -40px
+      left: calc(50% - 50px)
+
   .notice-link
     font-size: 14px
 
@@ -629,6 +670,11 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .pcontact-item
+    width: 330px
+    &:nth-child(2)
+      width: 330px
+
   .cabinet-tabs
     ul
       margin-left: 0
@@ -710,6 +756,11 @@
 
 
 @media screen and (max-width: 390px)
+
+  .pcontact-item
+    width: 100%
+    &:nth-child(2)
+      width: 100%
 
   .settings-item, .reg-item
     .btn
