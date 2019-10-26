@@ -331,6 +331,40 @@
 // ≥750px
 +media-breakpoint-down(sm)
 
+  .notice-link
+    font-size: 14px
+
+  .s-registration
+    padding-top: 30px
+
+  .registration-wrap
+    flex-direction: column-reverse
+    align-items: center
+
+  .reg-item
+    text-align: center
+    width: 290px
+    position: relative
+    margin-bottom: 100px
+    &:after
+      content: ''
+      position: absolute
+      width: 100px
+      height: 2px
+      background-color: #a2a2a2
+      bottom: -50px
+      left: calc(50% - 50px)
+    label
+      span
+        text-align: left
+        display: block
+    .form-notice
+      text-align: left
+    &:first-child
+      margin-bottom: 0
+      &:after
+        display: none
+
   .settings-wrap
     flex-direction: column
     align-items: center
@@ -677,7 +711,7 @@
 
 @media screen and (max-width: 390px)
 
-  .settings-item
+  .settings-item, .reg-item
     .btn
       width: 200px
 

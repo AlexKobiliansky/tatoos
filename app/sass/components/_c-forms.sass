@@ -4,6 +4,9 @@ form
     margin-bottom: 20px
     span
       vertical-align: super
+      display: inline-block
+      &.mb
+        margin-bottom: 12px
   input[type="password"]
     font-family: caption
   input[type="checkbox"]
@@ -27,6 +30,29 @@ form
         color: red!important
   .form-error
     display: none!important
+  &.form-smaller
+    input, textarea
+      font-size: 14px
+      padding: 12px 18px 10px
+
+.form-notice
+  font-size: 11px
+  a
+    color: $text
+    text-decoration: underline
+    &:hover
+      text-decoration: none
+
+.notice-link
+  display: inline-block
+  font-size: 16px
+  text-transform: uppercase
+  margin-top: 35px
+  line-height: 1
+  color: $text
+  +mt(.3s)
+  &:hover
+    color: $accent
 
 
 

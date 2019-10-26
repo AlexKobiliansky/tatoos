@@ -140,175 +140,111 @@
                     <img src="img/logo.png" alt="alt" class="img-responsive">
                 </a>
 
-                <h1 class="pagehead-item page-title">Личный кабинет</h1>
+                <h1 class="pagehead-item page-title">Регистрация | Вход</h1>
 
                 <div class="pagehead-item breadcrumbs">
                     <a href="#0">Главная</a>
-                    <a href="#0">Личный кабинет</a>
-                    <a href="#0">Мои заказы</a>
+                    <a href="#0">Регистрация | Вход</a>
                 </div>
             </div>
         </div>
     </section>
     <!-- ======= PAGE-HEAD END ======= -->
 
-
-    <!-- ======= SECTION CABINET START ======= -->
-    <section class="s-cabinet">
+    <!-- ======= SECTION REGISTRARTION START ======= -->
+    <section class="s-registration">
         <div class="container">
-            <div class="cabinet-tabs">
-                <ul>
-                    <li><a href="#tabs-1"><img src="img/icons/cab-icon-1.svg" alt="alt" class="svg"> Профиль</a></li>
-                    <li><a href="#tabs-2"><img src="img/icons/cab-icon-2.svg" alt="alt" class="svg"> Мои заказы</a></li>
-                    <li><a href="#tabs-3"><img src="img/icons/cab-icon-3.svg" alt="alt" class="svg"> Настройки</a></li>
-                    <li><a href="#tabs-4"><img src="img/icons/cab-icon-4.svg" alt="alt" class="svg"> Бонусы</a></li>
-                </ul>
+            <div class="registration-wrap">
+                <!-- reg-item -->
+                <div class="reg-item">
+                    <div class="reg-item-title">Регистрация</div>
+                    <!-- form -->
+                    <form class="form form-smaller">
+
+                        <label>
+                            <span class="mb">Имя</span>
+                            <input type="text" placeholder="Иван" name="Имя" autocomplete="off"
+                                   data-validation="custom"
+                                   data-validation-regexp="^[a-zA-Zа-яА-Я ]{1,20}$"
+                                   data-validation-error-msg="* Укажите ваше имя">
+                        </label>
 
 
-                <div id="tabs-1">
-                    <div class="profile">
-                        <div class="profile-wrap">
-                            <!-- profile-item -->
-                            <div class="profile-item">
-                                <div class="profile-item-title">Контактная ифнормация</div>
-                                <div class="profile-item-desc">
-                                    <p>Имя Фамилия</p>
-                                    <p>Краснодар, Россия</p>
-                                    <p>wdoc@webdialect.com</p>
-                                    <p>+7-900-800-2000</p>
-                                </div>
-                                <div class="btn-wrap">
-                                    <a href="#0" class="btn btn-accent">Редактировать</a>
-                                </div>
-                            </div>
-                            <!-- /profile-item -->
+                        <label>
+                            <span class="mb">Фамилия</span>
+                            <input type="text" placeholder="Иванов" name="Фамилия" autocomplete="off"
+                                   data-validation="custom"
+                                   data-validation-regexp="^[a-zA-Zа-яА-Я ]{1,20}$"
+                                   data-validation-error-msg="* Укажите вашу фамилию">
+                        </label>
 
-                            <!-- profile-item -->
-                            <div class="profile-item">
-                                <div class="profile-item-title">Адрес доставки</div>
-                                <div class="profile-item-desc">
-                                    <p>г. Краснодар, ул. Новороссийская, 18, кв.47</p>
-                                </div>
-                                <div class="btn-wrap">
-                                    <a href="#0" class="btn btn-accent">Редактировать</a>
-                                </div>
-                            </div>
-                            <!-- /profile-item -->
+                        <label>
+                            <span class="mb">Email</span>
+                            <input type="text" placeholder="mail@mail.ru" name="email" autocomplete="off"
+                                   data-validation="email">
+                        </label>
 
-                            <!-- profile-item -->
-                            <div class="profile-item">
-                                <div class="profile-item-title">Реквизиты</div>
-                                <div class="profile-item-desc">
-                                    <p>Укажите реквизиты для выставления счета</p>
-                                </div>
-                                <div class="btn-wrap">
-                                    <a href="#0" class="btn btn-accent">Редактировать</a>
-                                </div>
-                            </div>
-                            <!-- /profile-item -->
-                        </div>
-                    </div>
+                        <label>
+                            <span class="mb">Страна</span>
+                            <input type="text" placeholder="Россия" name="Страна" autocomplete="off"
+                                   data-validation="required">
+                        </label>
+
+                        <label>
+                            <span class="mb">Телефон</span>
+                            <input type="text" placeholder="+7 900 200 0000" name="Телефон" autocomplete="off"
+                                   data-validation="custom"
+                                   data-validation-regexp="^[\+]?[(]?[0-9]{3}[)]?[-\s\.\]?[0-9]{3}[-\s\.\]?[0-9]{4,6}$">
+                        </label>
+
+                        <label>
+                            <span class="mb">Пароль</span>
+                            <input type="password" name="pass" autocomplete="off"
+                                   data-validation="strength" data-validation-strength="2">
+                        </label>
+
+                        <label>
+                            <span class="mb">Подтвердите пароль</span>
+                            <input name="pass_confirm" type="password" data-validation="confirmation" data-validation-confirm="pass">
+                        </label>
+
+                        <div class="form-notice">Нажимая на кнопку, вы автоматически соглашаетесь с <a href="#0" target="_blank">политикой конфиденциальности</a></div>
+
+                        <button type="submit" class="btn btn-accent">Зарегистрироваться</button>
+
+                    </form>
+                    <!-- /form -->
                 </div>
-                <div id="tabs-2">
-                    <div class="orderlist">
-                        <div class="orderlist-top">
-                            <div class="orderlist-title">Список заказов</div>
-                            <div class="orderlist-sum">Оплачено заказов на сумму: <span>95 000 &#8381;</span></div>
+                <!-- /reg-item -->
+
+                <div class="reg-item">
+                    <div class="reg-item-title">Вход</div>
+                    <form class="form form-smaller">
+                        <label>
+                            <span class="mb">Email</span>
+                            <input type="text" name="email" autocomplete="off"
+                                   data-validation="email">
+                        </label>
+
+                        <label>
+                            <span class="mb">Пароль</span>
+                            <input type="password" name="pass" autocomplete="off"
+                                   data-validation="required">
+                        </label>
+
+                        <div class="form-notice">Нажимая на кнопку, вы автоматически соглашаетесь с <a href="#0" target="_blank">политикой конфиденциальности</a></div>
+
+                        <button type="submit" class="btn btn-accent">Войти</button>
+
+                        <div class="btn-wrap">
+                            <a href="#0" class="notice-link">Вспомнить пароль</a>
                         </div>
-
-                        <div class="orderlist-wrap">
-                            <!-- orderlist-item -->
-                            <div class="orderlist-item">
-                                <div class="orderlist-item-num">Заказ №5234</div>
-                                <div class="orderlist-item-date">8.07.2019</div>
-                                <div class="orderlist-item-status">Заказ подтвержден</div>
-                                <div class="orderlist-item-cost">27 550 &#8381;</div>
-                                <div class="orderlist-item-btn"><a href="#0" class="btn">Оплатить</a></div>
-                            </div>
-                            <!-- /orderlist-item -->
-
-                            <!-- orderlist-item -->
-                            <div class="orderlist-item">
-                                <div class="orderlist-item-num">Заказ №5234</div>
-                                <div class="orderlist-item-date">8.07.2019</div>
-                                <div class="orderlist-item-status">Заказ подтвержден</div>
-                                <div class="orderlist-item-cost">27 550 &#8381;</div>
-                                <div class="orderlist-item-btn"><a href="#0" class="btn disabled">Оплачено</a></div>
-                            </div>
-                            <!-- /orderlist-item -->
-
-                            <!-- orderlist-item -->
-                            <div class="orderlist-item">
-                                <div class="orderlist-item-num">Заказ №5234</div>
-                                <div class="orderlist-item-date">8.07.2019</div>
-                                <div class="orderlist-item-status">Заказ подтвержден</div>
-                                <div class="orderlist-item-cost">27 550 &#8381;</div>
-                                <div class="orderlist-item-btn"><a href="#0" class="btn disabled">Оплачено</a></div>
-                            </div>
-                            <!-- /orderlist-item -->
-
-
-                        </div>
-                    </div>
-                </div>
-                <div id="tabs-3">
-                    <div class="settings">
-                        <div class="settings-wrap">
-                            <!-- settings-item -->
-                            <div class="settings-item">
-                                <div class="settings-item-title">Сменить пароль</div>
-                                <!-- form -->
-                                <form class="form">
-
-                                    <label>
-                                        <input type="password" placeholder="Старый пароль" name="old_pass" autocomplete="off"
-                                               data-validation="required" >
-                                    </label>
-
-                                    <label>
-                                        <input type="password" placeholder="Новый пароль" name="pass" autocomplete="off"
-                                               data-validation="strength" data-validation-strength="2">
-                                    </label>
-
-                                    <label>
-                                        <input name="pass_confirm" type="password" placeholder="Повторите новый пароль" data-validation="confirmation" data-validation-confirm="pass">
-                                    </label>
-
-                                    <button type="submit" class="btn btn-accent">Изменить пароль</button>
-
-                                </form>
-                                <!-- /form -->
-                            </div>
-                            <!-- /settings-item -->
-
-
-                            <!-- settings-item -->
-                            <div class="settings-item">
-                                <div class="settings-item-title">Новости и уведомления</div>
-                                    <form class="form">
-                                        <label>
-                                            <input type="checkbox"> <span>Отправлять по СМС</span>
-                                        </label>
-
-                                        <label>
-                                            <input type="checkbox"> <span>Отправлять по СМС</span>
-                                        </label>
-
-                                        <button type="submit" class="btn btn-accent">Сохранить</button>
-                                    </form>
-                                </div>
-                            </div>
-                            <!-- /settings-item -->
-                        </div>
-                    </div>
-
-                <div id="tabs-4">
-                    4
+                    </form>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ======= SECTION CABINET END ======= -->
+    <!-- ======= SECTION REGISTRARTION END ======= -->
 
 
 
