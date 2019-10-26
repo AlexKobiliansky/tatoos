@@ -6,6 +6,16 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .delivery-item
+    &-img
+      width: 50px
+      margin-right: 25px
+    &-title
+      font-size: 18px
+      margin-bottom: 30px
+    &-desc
+      padding-left: 75px
+
   .s-sertificates
     padding-top: 50px
 
@@ -180,6 +190,14 @@
 
 // ≥970px
 +media-breakpoint-down(md)
+
+  .delivery-notice
+    font-size: 18px
+
+  .delivery-wrap
+    flex-wrap: wrap
+  .delivery-item
+    width: calc(50% - 30px)
 
   .sert-item
     width: 33.333%
@@ -360,6 +378,21 @@
 // ≥750px
 +media-breakpoint-down(sm)
 
+  .s-delivery
+    padding-top: 30px
+
+  .delivery-item
+    width: 100%
+    margin-bottom: 50px
+    &-title
+      margin-bottom: 40px
+      margin-top: 10px
+    &-img
+      margin-bottom: 0
+    &-desc
+      padding-left: 0
+    &:last-child
+      margin-bottom: 0
 
   .sert-item
     width: 50%
@@ -719,6 +752,16 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .delivery-notice
+    font-size: 14px
+    padding: 40px 0
+    margin-top: 30px
+
+  .delivery-item
+    margin-bottom: 40px
+    &-title
+      margin-top: 0
 
   .sert-item
     width: 100%
