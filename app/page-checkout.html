@@ -140,116 +140,136 @@
                     <img src="img/logo.png" alt="alt" class="img-responsive">
                 </a>
 
-                <h1 class="pagehead-item page-title">Контакты</h1>
+                <h1 class="pagehead-item page-title">Оформление заказа</h1>
 
                 <div class="pagehead-item breadcrumbs">
                     <a href="#0">Главная</a>
-                    <a href="#0">Контакты</a>
+                    <a href="#0">Корзина</a>
+                    <a href="#0">Оформление заказа</a>
                 </div>
             </div>
         </div>
     </section>
     <!-- ======= PAGE-HEAD END ======= -->
 
-    <!-- ======= SECTION CONTACTS START ======= -->
-    <section class="p-contacts">
+    <!-- ======= SECTION CHECKOUT START ======= -->
+    <section class="s-checkout">
         <div class="container">
-            <div class="pcontacts-wrap">
-                <!-- pcontact-item -->
-                <div class="pcontact-item">
-                    <div class="pcontact-item-title">Напишите нам</div>
-                    <p>По вопросам опта или развития нашей продукции, пожалуйста, свяжитесь с нами:</p>
+            <form class="form form-smaller checkout-wrap">
+                <!-- checkout-item -->
+                <div class="checkout-item">
+                    <div class="checkout-item-title">Адрес доставки</div>
 
-                    <!-- form -->
-                    <form class="form form-smaller">
+                    <div class="checkout-item-wrapper">
+                        <div class="checkout-item-half">
+                            <label>
+                                <span class="mb">Страна</span>
+                                <input type="text" placeholder="Россия" name="Страна" autocomplete="off"
+                                       data-validation="required">
+                            </label>
 
-                        <label>
-                            <span class="mb">Ваше имя</span>
-                            <input type="text" placeholder="Иван" name="Имя" autocomplete="off"
-                                   data-validation="custom"
-                                   data-validation-regexp="^[a-zA-Zа-яА-Я ]{1,20}$"
-                                   data-validation-error-msg="* Укажите ваше имя">
-                        </label>
+                            <label>
+                                <span class="mb">Город | Населенный пункт</span>
+                                <input type="text" placeholder="Краснодар" name="Город" autocomplete="off"
+                                       data-validation="required">
+                            </label>
 
-                        <label>
-                            <span class="mb">Номер телефона</span>
-                            <input type="text" placeholder="+7 900 200 0000" name="Телефон" autocomplete="off"
-                                   data-validation="custom"
-                                   data-validation-regexp="^[\+]?[(]?[0-9]{3}[)]?[-\s\.\]?[0-9]{3}[-\s\.\]?[0-9]{4,6}$">
-                        </label>
-
-                        <label>
-                            <span class="mb">Email</span>
-                            <input type="text" placeholder="mail@mail.ru" name="email" autocomplete="off"
-                                   data-validation="email">
-                        </label>
-
-                        <label>
-                            <span class="mb">Тема сообщения</span>
-                            <input type="text" name="Тема сообщения" autocomplete="off"
-                                   data-validation="required">
-                        </label>
-
-                        <label>
-                            <span class="mb">Текст сообщения</span>
-                            <textarea name="Сообщение" autocomplete="off"
-                                      data-validation="required"></textarea>
-                        </label>
-
-                        <div class="form-notice">Нажимая на кнопку, вы автоматически соглашаетесь с <a href="#0" target="_blank">политикой конфиденциальности</a></div>
-
-                        <div class="btn-wrap">
-                            <button type="submit" class="btn btn-accent">Отправить</button>
-
+                            <label>
+                                <span class="mb">Индекс</span>
+                                <input type="text" placeholder="990000" name="Индекс" autocomplete="off">
+                            </label>
                         </div>
 
-                    </form>
-                    <!-- /form -->
-                </div>
-                <!-- /pcontact-item -->
+                        <div class="checkout-item-half">
+                            <label>
+                                <span class="mb">Улица</span>
+                                <input type="text" name="Улица" autocomplete="off" data-validation="required">
+                            </label>
 
+                            <label>
+                                <span class="mb">Дом | Строение | Квартира</span>
+                                <input type="text" name="Дом" autocomplete="off" data-validation="required">
+                            </label>
 
-                <!-- pcontact-item -->
-                <div class="pcontact-item">
-                    <div class="contact-block">
-                        <div class="pcontact-item-title">Наш адрес</div>
-                        <p>Москва, 1-й Красносельский пер., д. 7/9А, стр. 11, м. Красносельская</p>
+                            <label>
+                                <span class="mb">Дополнительная информация</span>
+                                <input type="text" name="Доп. инфо" autocomplete="off">
+                            </label>
+                        </div>
                     </div>
-
-                    <div class="contact-block">
-                        <div class="pcontact-item-title">Телефон</div>
-                        <p><a href="tel:+79167779800">+7 916 777 98 00</a></p>
-                    </div>
-
-                    <div class="contact-block">
-                        <div class="pcontact-item-title">Email</div>
-                        <p>
-                            <a href="mailto:sales@permablend.ru">sales@permablend.ru</a> <br>
-                            вопросы о заказах, оплате, доставке, дистрибьюторстве
-                        </p>
-                    </div>
-
-
-                    <div class="contact-block gutter">
-                        <div class="pcontact-item-title">Оптовые закупки, дистрибьюторство</div>
-                        <p>Для любых вопросов относительно оптовых покупок и распространения пигментов, пожалуйста, свяжитесь с нами:</p>
-                    </div>
-
-                    <div class="contact-block">
-                        <div class="pcontact-item-title">Часы работы</div>
-                        <p>Понедельник – Пятница <br>
-                            10:00 - 18:00 <br>
-                            Суббота и Воскресенье <br>
-                            Выходной день</p>
-                    </div>
-
 
                 </div>
-                <!-- /pcontact-item -->
-            </div>
+                <!-- /checkout-item -->
+
+                <!-- chekout-item -->
+                <div class="checkout-item">
+                    <div class="checkout-item-title">Контактная информация</div>
+
+                    <div class="checkout-item-wrapper">
+                        <div class="checkout-item-half">
+                            <label>
+                                <span class="mb">Имя</span>
+                                <input type="text" placeholder="Иван" name="Имя" autocomplete="off"
+                                       data-validation="custom"
+                                       data-validation-regexp="^[a-zA-Zа-яА-Я ]{1,20}$">
+                            </label>
+
+                            <label>
+                                <span class="mb">Фамилия</span>
+                                <input type="text" placeholder="Иванов" name="Фамилия" autocomplete="off"
+                                       data-validation="custom"
+                                       data-validation-regexp="^[a-zA-Zа-яА-Я ]{1,20}$">
+                            </label>
+
+                            <label class="label-checkbox d-none d-sm-block">
+                                <input type="checkbox" checked> <span>Я соглашаюсь с условиями <a href="#0" target="_blank">оплаты и доставки</a></span>
+                            </label>
+
+                            <label class="label-checkbox d-none d-sm-block">
+                                <input type="checkbox"> <span>Я ознакомлен и согласен с условиями <a href="#0" target="_blank">политики конфиденциальности</a></span>
+                            </label>
+                        </div>
+
+                        <div class="checkout-item-half">
+                            <label>
+                                <span class="mb">Телефон</span>
+                                <input type="text" placeholder="+7 900 200 0000" name="Телефон" autocomplete="off"
+                                       data-validation="custom"
+                                       data-validation-regexp="^[\+]?[(]?[0-9]{3}[)]?[-\s\.\]?[0-9]{3}[-\s\.\]?[0-9]{4,6}$">
+                            </label>
+
+                            <label>
+                                <span class="mb">Номер телефона</span>
+                                <input type="text" placeholder="+7 900 200 0000" name="Телефон" autocomplete="off"
+                                       data-validation="custom"
+                                       data-validation-regexp="^[\+]?[(]?[0-9]{3}[)]?[-\s\.\]?[0-9]{3}[-\s\.\]?[0-9]{4,6}$">
+                            </label>
+
+                            <label class="label-checkbox d-block d-sm-none">
+                                <input type="checkbox" checked> <span>Я соглашаюсь с условиями <a href="#0" target="_blank">оплаты и доставки</a></span>
+                            </label>
+
+                            <label class="label-checkbox d-block d-sm-none">
+                                <input type="checkbox"> <span>Я ознакомлен и согласен с условиями <a href="#0" target="_blank">политики конфиденциальности</a></span>
+                            </label>
+
+                            <div class="checkout-sum">Сумма заказа: <span>25 000 &#8381;</span></div>
+
+                            <div class="checkout-pay">К оплате: <span>25 000 &#8381;</span></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /chekout-item -->
+
+                <div class="btn-wrap">
+                    <button type="submit" class="btn btn-accent">Отправить заказ</button>
+                    <a href="#0" class="notice-link">Редактировать заказ</a>
+                </div>
+            </form>
         </div>
     </section>
-    <!-- ======= SECTION CONTACTS END ======= -->
+    <!-- ======= SECTION CHECKOUT END ======= -->
 
 
 

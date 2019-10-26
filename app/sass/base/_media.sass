@@ -6,6 +6,9 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-checkout
+    padding-top: 30px
+
   .pcontact-item
     margin: 0 30px
     &-title
@@ -175,6 +178,11 @@
 // ≥970px
 +media-breakpoint-down(md)
 
+  .checkout-sum
+    font-size: 16px
+
+  .checkout-pay
+    font-size: 24px
 
   .settings-wrap
     justify-content: space-around
@@ -336,6 +344,23 @@
 
 // ≥750px
 +media-breakpoint-down(sm)
+
+
+  .checkout-sum
+    font-size: 14px
+  .checkout-pay
+    font-size: 20px
+
+  .checkout-wrap
+    width: 100%
+    .label-checkbox
+      span
+        font-size: 9px
+
+  .checkout-item
+    margin-bottom: 15px
+    &-half
+      width: calc(50% - 15px)
 
   .p-contacts
     padding-top: 30px
@@ -669,6 +694,41 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .checkout-sum
+    text-align: center
+
+  .checkout-pay
+    text-align: center
+    margin-bottom: 20px
+
+  .checkout-wrap
+    padding-left: 25px
+    padding-right: 25px
+    .label-checkbox
+      margin-bottom: 40px
+      .jq-checkbox
+        float: left
+      span
+        top: 0
+        display: inline
+        vertical-align: baseline
+        line-height: 1
+        padding: 0
+    .btn-wrap
+      .btn
+        width: 180px
+        font-size: 11px
+      .notice-link
+        font-size: 11px
+        margin-top: 25px
+
+
+  .checkout-item
+    &-wrapper
+      flex-direction: column
+    &-half
+      width: 100%
 
   .pcontact-item
     width: 330px
