@@ -1,0 +1,90 @@
+.artist-info
+  display: flex
+  position: relative
+  padding-bottom: 60px
+  &:after
+    content: ''
+    position: absolute
+    width: 100px
+    height: 2px
+    background-color: #a2a2a2
+    bottom: 0
+    left: calc(50% - 50px)
+  &-img
+    width: 490px
+    margin-right: 95px
+    border-radius: 5px
+    overflow: hidden
+    img
+      border-radius: 5px
+  &-content
+    width: calc(100% - 585px)
+  &-topline
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 40px
+  &-country
+    font-size: 16px
+    text-transform: uppercase
+    font-weight: 700
+    color: $accent
+    margin-left: 10px
+  &-name
+    font-size: 25px
+  &-desc
+    margin-bottom: 30px
+  &-subscr
+    font-size: 16px
+    .svg
+      width: 18px
+      height: auto
+      margin-right: 12px
+      position: relative
+      top: 3px
+    a
+      +mt(.3s)
+      color: $text
+      &:hover
+        color: $accent
+
+.artist-portfolio
+  padding-top: 65px
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.portfolio-item
+  width: calc(33.333% - 50px)
+  margin-bottom: 60px
+  a
+    position: relative
+    display: inline-block
+    overflow: hidden
+    border-radius: 5px
+    background-color: $accent
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      +mt(.3s)
+      background-color: rgba(#000, .7)
+      opacity: 0
+    &:after
+      content: ''
+      position: absolute
+      width: 48px
+      height: 48px
+      +bg-cover
+      background-image: url('../img/icons/plus-icon.svg')
+      left: calc(50% - 24px)
+      top: calc(50% - 24px)
+      +mt(.3s)
+      opacity: 0
+    &:hover
+      &:before, &:after
+        opacity: 1
+

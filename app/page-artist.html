@@ -140,136 +140,92 @@
                     <img src="img/logo.png" alt="alt" class="img-responsive">
                 </a>
 
-                <h1 class="pagehead-item page-title">Оформление заказа</h1>
+                <h1 class="pagehead-item page-title">Страница артиста</h1>
 
                 <div class="pagehead-item breadcrumbs">
                     <a href="#0">Главная</a>
-                    <a href="#0">Корзина</a>
-                    <a href="#0">Оформление заказа</a>
+                    <a href="#0">Pro team</a>
+                    <a href="#0">Артист</a>
                 </div>
             </div>
         </div>
     </section>
     <!-- ======= PAGE-HEAD END ======= -->
 
-    <!-- ======= SECTION CHECKOUT START ======= -->
-    <section class="s-checkout">
+    <!-- ======= SECTION ARTIST START ======= -->
+    <section class="s-artist">
         <div class="container">
-            <form class="form form-smaller checkout-wrap">
-                <!-- checkout-item -->
-                <div class="checkout-item">
-                    <div class="checkout-item-title">Адрес доставки</div>
-
-                    <div class="checkout-item-wrapper">
-                        <div class="checkout-item-half">
-                            <label>
-                                <span class="mb">Страна</span>
-                                <input type="text" placeholder="Россия" name="Страна" autocomplete="off"
-                                       data-validation="required">
-                            </label>
-
-                            <label>
-                                <span class="mb">Город | Населенный пункт</span>
-                                <input type="text" placeholder="Краснодар" name="Город" autocomplete="off"
-                                       data-validation="required">
-                            </label>
-
-                            <label>
-                                <span class="mb">Индекс</span>
-                                <input type="text" placeholder="990000" name="Индекс" autocomplete="off">
-                            </label>
-                        </div>
-
-                        <div class="checkout-item-half">
-                            <label>
-                                <span class="mb">Улица</span>
-                                <input type="text" name="Улица" autocomplete="off" data-validation="required">
-                            </label>
-
-                            <label>
-                                <span class="mb">Дом | Строение | Квартира</span>
-                                <input type="text" name="Дом" autocomplete="off" data-validation="required">
-                            </label>
-
-                            <label>
-                                <span class="mb">Дополнительная информация</span>
-                                <input type="text" name="Доп. инфо" autocomplete="off">
-                            </label>
-                        </div>
+            <div class="artist-info">
+                <div class="artist-info-img">
+                    <img src="img/artist-img.jpg" alt="alt" class="img-responsive">
+                </div>
+                <div class="artist-info-content">
+                    <div class="artist-info-topline">
+                        <div class="artist-info-name">Cэм Ньюджент</div>
+                        <div class="artist-info-country">Eng</div>
                     </div>
-
-                </div>
-                <!-- /checkout-item -->
-
-                <!-- chekout-item -->
-                <div class="checkout-item">
-                    <div class="checkout-item-title">Контактная информация</div>
-
-                    <div class="checkout-item-wrapper">
-                        <div class="checkout-item-half">
-                            <label>
-                                <span class="mb">Имя</span>
-                                <input type="text" placeholder="Иван" name="Имя" autocomplete="off"
-                                       data-validation="custom"
-                                       data-validation-regexp="^[a-zA-Zа-яА-Я ]{1,20}$">
-                            </label>
-
-                            <label>
-                                <span class="mb">Фамилия</span>
-                                <input type="text" placeholder="Иванов" name="Фамилия" autocomplete="off"
-                                       data-validation="custom"
-                                       data-validation-regexp="^[a-zA-Zа-яА-Я ]{1,20}$">
-                            </label>
-
-                            <label class="label-checkbox d-none d-sm-block">
-                                <input type="checkbox" checked> <span>Я соглашаюсь с условиями <a href="#0" target="_blank">оплаты и доставки</a></span>
-                            </label>
-
-                            <label class="label-checkbox d-none d-sm-block">
-                                <input type="checkbox"> <span>Я ознакомлен и согласен с условиями <a href="#0" target="_blank">политики конфиденциальности</a></span>
-                            </label>
-                        </div>
-
-                        <div class="checkout-item-half">
-                            <label>
-                                <span class="mb">Телефон</span>
-                                <input type="text" placeholder="+7 900 200 0000" name="Телефон" autocomplete="off"
-                                       data-validation="custom"
-                                       data-validation-regexp="^[\+]?[(]?[0-9]{3}[)]?[-\s\.\]?[0-9]{3}[-\s\.\]?[0-9]{4,6}$">
-                            </label>
-
-                            <label>
-                                <span class="mb">Номер телефона</span>
-                                <input type="text" placeholder="+7 900 200 0000" name="Телефон" autocomplete="off"
-                                       data-validation="custom"
-                                       data-validation-regexp="^[\+]?[(]?[0-9]{3}[)]?[-\s\.\]?[0-9]{3}[-\s\.\]?[0-9]{4,6}$">
-                            </label>
-
-                            <label class="label-checkbox d-block d-sm-none">
-                                <input type="checkbox" checked> <span>Я соглашаюсь с условиями <a href="#0" target="_blank">оплаты и доставки</a></span>
-                            </label>
-
-                            <label class="label-checkbox d-block d-sm-none">
-                                <input type="checkbox"> <span>Я ознакомлен и согласен с условиями <a href="#0" target="_blank">политики конфиденциальности</a></span>
-                            </label>
-
-                            <div class="checkout-sum">Сумма заказа: <span>25 000 &#8381;</span></div>
-
-                            <div class="checkout-pay">К оплате: <span>25 000 &#8381;</span></div>
-                        </div>
+                    <div class="artist-info-desc">
+                        <p>Я начал в очень молодом возрасте посещать художественные классы и школы изобразительного искусства примерно до 12 лет, когда я открыл для себя ручную аэрографию и начал карьеру в реалистическом искусстве, включая животных, портреты, автомобили и т. д. до тех пор, пока не нашел татуировку в возрасте 21 года, что в конечном итоге привело к полной жизни и карьере в искусстве, что позволяет мне продолжать исследовать мою страсть и я могу поделиться ею с вами.</p>
                     </div>
-
+                    <div class="artist-info-subscr">
+                        <a href="#0" target="_blank"><img src="img/icons/insta-icon.svg" alt="alt" class="svg">Подписаться</a>
+                    </div>
                 </div>
-                <!-- /chekout-item -->
+            </div>
 
-                <div class="btn-wrap">
-                    <button type="submit" class="btn btn-accent">Отправить заказ</button>
-                    <a href="#0" class="notice-link">Редактировать заказ</a>
+            <div class="artist-portfolio">
+                <!-- portfolio-item -->
+                <div class="portfolio-item">
+                    <a href="img/port-img-1.jpg" data-size="400x400">
+                        <img src="img/port-img-1.jpg" alt="alt" class="img-responsive">
+                    </a>
                 </div>
-            </form>
+                <!-- /portfolio-item -->
+
+                <!-- portfolio-item -->
+                <div class="portfolio-item">
+                    <a href="img/port-img-2.jpg" data-size="400x400">
+                        <img src="img/port-img-2.jpg" alt="alt" class="img-responsive">
+                    </a>
+                </div>
+                <!-- /portfolio-item -->
+
+                <!-- portfolio-item -->
+                <div class="portfolio-item">
+                    <a href="img/port-img-3.jpg" data-size="400x400">
+                        <img src="img/port-img-3.jpg" alt="alt" class="img-responsive">
+                    </a>
+                </div>
+                <!-- /portfolio-item -->
+
+                <!-- portfolio-item -->
+                <div class="portfolio-item">
+                    <a href="img/port-img-1.jpg" data-size="400x400">
+                        <img src="img/port-img-1.jpg" alt="alt" class="img-responsive">
+                    </a>
+                </div>
+                <!-- /portfolio-item -->
+
+                <!-- portfolio-item -->
+                <div class="portfolio-item">
+                    <a href="img/port-img-2.jpg" data-size="400x400">
+                        <img src="img/port-img-2.jpg" alt="alt" class="img-responsive">
+                    </a>
+                </div>
+                <!-- /portfolio-item -->
+
+                <!-- portfolio-item -->
+                <div class="portfolio-item">
+                    <a href="img/port-img-3.jpg" data-size="400x400">
+                        <img src="img/port-img-3.jpg" alt="alt" class="img-responsive">
+                    </a>
+                </div>
+                <!-- /portfolio-item -->
+            </div>
         </div>
+
     </section>
-    <!-- ======= SECTION CHECKOUT END ======= -->
+    <!-- ======= SECTION ARTIST END ======= -->
 
     <!-- ======= FOOTER START ======= -->
     <footer class="main-foot">
@@ -335,6 +291,7 @@
     </footer>
     <!-- ======= FOOTER END ======= -->
 </div>
+
 
 <!-- ======= HTML FOR PHOTOSWIPE ======= -->
 <!-- Root element of PhotoSwipe. Must have class pswp. -->

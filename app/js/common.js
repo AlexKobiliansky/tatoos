@@ -128,11 +128,7 @@ $(document).ready(function(){
     /** END FORMS */
 
 
-
-
-
-
-
+    $('.artist-portfolio').photoswipe();
 
     $('#totop').click(function() {
         $('body,html').animate({scrollTop:0},600);

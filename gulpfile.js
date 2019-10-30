@@ -47,6 +47,9 @@ gulp.task('scripts', function() {
 		'app/libs/jquery-form-validator/form-validator/security.js',
 		'app/libs/formstyler/jquery.formstyler.min.js',
 		'app/libs/jqueryTabs/jquery-ui.min.js',
+		'app/libs/photoswipe/photoswipe.min.js',
+		'app/libs/photoswipe/photoswipe-ui-default.min.js',
+		'app/libs/photoswipe/jquery.photoswipe.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

@@ -6,6 +6,17 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .artist-info
+    padding-bottom: 50px
+    &-img
+      width: 405px
+      margin-right: 75px
+    &-content
+      width: calc(100% - 480px)
+    &-topline
+      margin-bottom: 30px
+
+
   .delivery-item
     &-img
       width: 50px
@@ -190,6 +201,20 @@
 
 // ≥970px
 +media-breakpoint-down(md)
+
+  .portfolio-item
+    width: calc(33.333% - 35px)
+    margin-bottom: 50px
+
+  .s-artist
+    padding: 50px 0 20px
+
+  .artist-info
+    &-img
+      width: 315px
+      margin-right: 60px
+    &-content
+      width: calc(100% - 375px)
 
   .delivery-notice
     font-size: 18px
@@ -377,6 +402,26 @@
 
 // ≥750px
 +media-breakpoint-down(sm)
+
+  .artist-portfolio
+    padding-top: 50px
+
+  .portfolio-item
+    width: calc(50% - 25px)
+
+
+  .artist-info
+    flex-direction: column
+    &-img
+      width: 100%
+      margin-bottom: 25px
+      img
+        margin-left: auto
+        margin-right: auto
+    &-content
+      width: 100%
+    &-subscr
+      text-align: center
 
   .s-delivery
     padding-top: 30px
@@ -752,6 +797,20 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .portfolio-item
+    width: calc(50% - 15px)
+    margin-bottom: 30px
+
+
+  .artist-info
+    padding-bottom: 40px
+    &-name
+      font-size: 20px
+    &-country
+      font-size: 14px
+    &-topline
+      margin-bottom: 15px
 
   .delivery-notice
     font-size: 14px
