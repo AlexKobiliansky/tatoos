@@ -1,0 +1,184 @@
+.s-basket
+  padding-top: 50px
+  p
+    font-size: 16px
+    text-align: center
+  .container
+    position: relative
+  .del-notice
+    width: 205px
+    height: 95px
+    background-color: #fff
+    border-radius: 5px
+    box-shadow: 0 0 20px rgba(#000, .2)
+    position: fixed
+    display: flex
+    align-items: center
+    justify-content: center
+    top: 90px
+    right: 90px
+    z-index: 5
+    +mt(.7s)
+    opacity: 0
+    pointer-events: none
+    &.active
+      opacity: 1
+      pointer-events: auto
+    .close-notification
+      position: absolute
+      right: 12px
+      top: 12px
+      .svg
+        width: 10px
+        height: auto
+
+.bas-notice-wrap
+  display: flex
+  flex-wrap: wrap
+  margin: 45px 0 40px
+
+.bnotice-item
+  width: calc(33.333% - 50px)
+  margin-right: 75px
+  background-color: #fff
+  box-shadow: 0 0 20px rgba(#000, .2)
+  border-radius: 5px
+  padding: 20px 20px 25px
+  margin-bottom: 30px
+  &:nth-child(3n)
+    margin-right: 0
+  &-title
+    text-align: center
+    color: $accent
+    font-size: 16px
+    margin-bottom: 12px
+  &-desc
+    font-size: 12px
+
+
+.basket-item
+  display: flex
+  justify-content: space-between
+  position: relative
+  margin-bottom: 125px
+  &:after
+    content: ''
+    position: absolute
+    width: 126px
+    height: 2px
+    background-color: #a2a2a2
+    bottom: -60px
+    left: calc(50% - 63px)
+  &:last-child
+    margin-bottom: 80px
+    &:after
+      display: none
+  &-leftrow
+    width: 125px
+    margin-right: 70px
+    img
+      border-radius: 5px
+      box-shadow: 0 0 20px rgba(#000, .2)
+  &-midrow
+    width: calc(100% - 455px)
+  &-title
+    font-size: 25px
+    margin-bottom: 30px
+  &-desc
+    margin-bottom: 30px
+    p
+      text-align: left
+      margin-bottom: 0
+    span
+      font-weight: 700
+  &-del
+    font-size: 14px
+    +mt(.3s)
+    color: $text
+    .svg
+      width: 15px
+      height: auto
+      margin-right: 10px
+    &:hover
+      color: $accent
+  &-rightrow
+    width: 230px
+    margin-left: 30px
+    text-align: right
+  &-price
+    font-size: 35px
+    font-weight: 700
+    margin-bottom: 30px
+  &-sale
+    font-size: 16px
+    color: $accent
+    margin-bottom: 25px
+    span
+      font-weight: 700
+  &-amount
+    font-size: 16px
+    font-weight: 700
+
+
+.spinner-amount
+  display: inline-block
+  margin-left: 10px
+  position: relative
+  top: 5px
+  input
+    text-align: center
+    border: none
+    font-size: 18px
+    max-width: 34px
+    display: inline
+    vertical-align: top
+    height: 28px
+  button
+    width: 24px
+    height: 24px
+    box-shadow: none
+    border: none
+    background: transparent
+    border-radius: 50%
+    background-image: url('../img/icons/arrow-accent.svg')
+    +bg-cover
+    cursor: pointer
+    +mt(.3s)
+    &:hover
+      background-color: $accent
+      background-image: url('../img/icons/arrow-accent-hover.svg')
+    &.down
+      transform: rotate(-90deg)
+    &.up
+      transform: rotate(90deg)
+
+.bas-bottom
+  display: flex
+  justify-content: space-between
+  .half-item
+    width: 320px
+    &:last-child
+      width: 270px
+      a
+        width: 100%
+        text-align: center
+.basket-sum
+  font-size: 18px
+  font-weight: 700
+  margin-bottom: 18px
+  span
+    font-weight: normal
+
+.basket-pay
+  font-size: 35px
+  font-weight: 700
+  margin-bottom: 18px
+  span
+    font-weight: normal
+
+.basket-notice
+  font-size: 12px
+
+
+
+
