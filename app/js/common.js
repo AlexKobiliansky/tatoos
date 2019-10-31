@@ -140,6 +140,34 @@ $(document).ready(function(){
     });
 
 
+    function heightses() {
+        if ($(window).width()>=390) {
+            $('.cat-item-title').matchHeight({byRow: true,});
+        }
+
+        }
+
+    heightses();
+
+    $(window).on('load', function (){
+        $(window).resize(function() {
+            heightses();
+        });
+
+        heightses();
+    });
+
+    $('.rolling-filters').on('click', function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $('#filter-wrap').slideToggle();
+
+        $(this).find('span').text(function(i, text){
+            return text === "Открыть фильтры" ? "Закрыть фильтры" : "Открыть фильтры";
+        })
+    });
+
+
 
 
     /**
