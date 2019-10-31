@@ -50,3 +50,70 @@
   &:hover
     .blog-item-preview
       top: 0
+
+
+.pagination
+  display: flex
+  justify-content: center
+  align-items: center
+  .page-prev, .page-next
+    position: relative
+    top: -3px
+    .svg
+      width: 32px
+      height: 32px
+      +mt(.3s)
+      fill: $accent
+    &:hover
+      .svg
+        fill: $text
+  .page-prev
+    transform: rotate(-90deg)
+    margin-right: 10px
+  .page-next
+    transform: rotate(90deg)
+    margin-left: 10px
+  .page-num
+    +mt(.3s)
+    font-size: 16px
+    display: inline-block
+    color: $text
+    padding: 0 10px
+    &:hover, &.active
+      color: $accent
+
+
+.blog-wrap
+  margin: 55px 0 20px
+  .blog-item
+    width: 356px
+    height: 350px
+    margin-bottom: 35px
+    margin-right: 35px
+    &:hover
+      .blog-item-preview
+        top: 0!important
+    &-preview
+      top: 255px
+    &:nth-child(7n-4), &:nth-child(7n-3), &:nth-child(7n)
+      margin-right: 0
+    &:nth-child(7n-6)
+      width: 489px
+      height: 685px
+      .blog-item-preview
+        top: 590px
+      &:hover
+        .blog-item-preview
+          top: 0
+    &:nth-child(7n-5), &:nth-child(7n-4)
+      width: 290px
+      height: 285px
+      .blog-item-preview
+        top: 190px
+    &:nth-child(7n-3)
+      width: 615px
+      height: 365px
+      .blog-item-preview
+        top: 270px
+
+
