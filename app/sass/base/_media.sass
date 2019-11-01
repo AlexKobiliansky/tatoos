@@ -6,6 +6,33 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-similar
+    .section-title
+      font-size: 30px
+      margin-bottom: 90px
+      &:after
+        bottom: -45px
+
+  .similar-item
+    &:nth-child(5)
+      display: none
+
+
+  .smear
+    left: -130px
+    .svg
+      width: 600px
+
+  .product-slider-wrap
+    width: 375px
+    margin-right: 110px
+
+  .product-info-wrap
+    width: calc(100% - 485px)
+
+  .product-title
+    font-size: 30px
+
   .pay-sum
     font-size: 20px
 
@@ -319,6 +346,40 @@
 
 // ≥970px
 +media-breakpoint-down(md)
+
+  .s-similar
+    .section-title
+      font-size: 25px
+
+  .similar-wrap
+    flex-wrap: wrap
+
+  .similar-item
+    width: calc(33.333% - 20px)
+    &:nth-child(5), &:nth-child(6)
+      display: block
+
+  .product-title
+    width: 100%
+
+  .product-slider-wrap
+    width: 300px
+    margin-right: 75px
+
+  .product-info-wrap
+    width: calc(100% - 375px)
+
+  .product-price
+    width: 100%
+    margin-bottom: 35px
+
+  .product-table
+    margin-top: 30px
+
+  .smear
+    left: -100px
+    .svg
+      width: 470px
 
   .s-payment
     padding-top: 50px
@@ -707,6 +768,39 @@
 
 // ≥750px
 +media-breakpoint-down(sm)
+
+  .product-topline
+    margin-top: 0
+    margin-bottom: 0
+
+  .product-title
+    font-size: 25px
+    padding-left: 0
+    text-align: center
+    margin-bottom: 70px
+    &:before
+      width: 100px
+      height: 2px
+      left: calc(50% - 50px)
+      top: auto
+      bottom: -30px
+
+  .product-body
+    flex-direction: column
+    align-items: center
+
+  .product-slider-wrap
+    margin-right: 0
+    margin-bottom: 55px
+
+  .product-info-wrap
+    width: 100%
+
+  .product-price
+    text-align: center
+
+  .product-table
+    margin-top: 0
 
   .payment-items-wrap
     flex-wrap: wrap
@@ -1307,6 +1401,49 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .s-product
+    padding-bottom: 50px
+
+  .s-similar
+    .section-title
+      font-size: 20px
+      margin-bottom: 70px
+      &:after
+        bottom: -30px
+
+  .product-slider-wrap
+    width: 100%
+    margin-bottom: 40px
+
+  .product-slider
+    width: 260px
+    margin-left: auto
+    margin-right: auto
+    .owl-nav
+      top: calc(50% - 10px)
+      button.owl-prev
+        width: 20px
+        height: 20px
+        left: 15px
+      button.owl-next
+        width: 20px
+        height: 20px
+        right: 15px
+
+  .product-price
+    font-size: 18px
+    span
+      font-size: 25px
+
+  .product-table
+    .btn
+      width: 100px
+
+  .smear
+    left: 0
+    .svg
+      width: 100%
+
   .s-payment
     padding-top: 35px
 
@@ -1606,6 +1743,13 @@
 
 
 @media screen and (max-width: 390px)
+
+  .similar-wrap
+    flex-direction: column
+    align-items: center
+
+  .product-title
+    font-size: 20px
 
   .order-item
     .basket-item-leftrow
