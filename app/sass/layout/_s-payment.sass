@@ -1,0 +1,33 @@
+.s-payment
+  padding-bottom: 35px
+
+.payment-items-wrap
+  display: flex
+  justify-content: space-between
+  position: relative
+  margin-bottom: 100px
+  &:after
+    content: ''
+    position: absolute
+    width: 100px
+    height: 2px
+    background-color: #a2a2a2
+    bottom: -50px
+    left: calc(50% - 50px)
+
+.payment-item
+  width: calc(33.333% - 40px)
+  display: flex
+  &-img
+    width: 55px
+    margin-right: 25px
+    .svg
+      width: 55px
+      height: auto
+  &-content
+    width: calc(100% - 80px)
+  &-title
+    font-size: 17px
+    margin-bottom: 18px
+  &-desc
+    font-size: 12px

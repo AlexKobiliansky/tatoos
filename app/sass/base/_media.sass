@@ -320,6 +320,29 @@
 // ≥970px
 +media-breakpoint-down(md)
 
+  .s-payment
+    padding-top: 50px
+
+  .payment-items-wrap
+    margin-bottom: 80px
+    &:after
+      bottom: -40px
+
+  .payment-item
+    flex-direction: column
+    &-img
+      width: 100%
+      margin-bottom: 30px
+      text-align: center
+      .svg
+        height: 50px
+        width: auto
+    &-content
+      width: 100%
+    &-title
+      margin-bottom: 8px
+      text-align: center
+
   .s-pay
     padding-top: 45px
 
@@ -684,6 +707,13 @@
 
 // ≥750px
 +media-breakpoint-down(sm)
+
+  .payment-items-wrap
+    flex-wrap: wrap
+
+  .payment-item
+    width: calc(50% - 30px)
+    margin-bottom: 30px
 
   .pay-content
     h3
@@ -1276,6 +1306,25 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-payment
+    padding-top: 35px
+
+  .payment-items-wrap
+    padding: 0 50px
+
+  .payment-item
+    width: 100%
+    margin-bottom: 40px
+    &:last-child
+      margin-bottom: 0
+    &-img
+      margin-bottom: 22px
+      .svg
+        width: 55px
+        height: auto
+    &-title
+      margin-bottom: 15px
 
   .order-sub-topline
     flex-direction: column
