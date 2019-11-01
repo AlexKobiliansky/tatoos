@@ -1,0 +1,88 @@
+.s-residents
+  padding-top: 50px
+  padding-bottom: 20px
+
+.residents-topline
+  display: flex
+  justify-content: space-between
+  position: relative
+  margin-bottom: 120px
+  &:after
+    content: ''
+    position: absolute
+    width: 100px
+    height: 2px
+    background-color: #a2a2a2
+    bottom: -60px
+    left: calc(50% - 50px)
+  &>div
+    width: calc(50% - 15px)
+
+.residents-title
+  font-size: 35px
+
+
+.residents-help-wrap
+  width: 100%
+  overflow: hidden
+  position: relative
+  left: -20px
+
+
+.residents-wrap
+  padding-top: 20px
+  padding-left: 20px
+  display: flex
+  justify-content: flex-start
+  flex-wrap: wrap
+  width: calc(100% + 160px)
+  position: relative
+  left: -80px
+
+
+.resident-item
+  width: 260px
+  margin: 0 80px 60px
+  color: $text
+  &-img
+    height: 240px
+    +bg-cover
+    overflow: hidden
+    border-radius: 5px
+    box-shadow: 0 0 20px 2px rgba(#000, .2)
+    margin-bottom: 25px
+  &-content
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+  &-country
+    font-size: 16px
+    font-weight: 700
+    color: $accent
+    text-transform: uppercase
+    width: 40px
+    text-align: right
+  &-name
+    width: calc(100% - 40px)
+    font-size: 20px
+
+.res-filter-nav
+  display: flex
+  justify-content: center
+  margin-bottom: 60px
+
+.filter-nav-btn
+  font-size: 18px
+  font-weight: normal
+  border: none
+  background: none  
+  box-shadow: none
+  cursor: pointer
+  margin: 0 20px
+  text-transform: uppercase
+  +mt(.3s)
+  &.is-checked, &:hover
+    color: $accent
+
+
+

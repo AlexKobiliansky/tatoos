@@ -6,6 +6,27 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .residents-help-wrap
+    left: 0
+    padding-right: 20px
+
+  .res-filter-nav
+    flex-wrap: wrap
+    margin-bottom: 15px
+    button
+      margin-bottom: 15px
+
+  .residents-wrap
+    width: calc(100% + 70px)
+    left: -35px
+
+  .resident-item
+    margin: 0 30px 40px
+    width: calc(33.333% - 70px)
+
+  .residents-title
+    font-size: 30px
+
   .s-similar
     .section-title
       font-size: 30px
@@ -346,6 +367,33 @@
 
 // ≥970px
 +media-breakpoint-down(md)
+
+  .filter-nav-btn
+    font-size: 16px
+
+  .residents-wrap
+    width: calc(100% + 50px)
+    left: -25px
+
+  .resident-item
+    margin: 0 20px 40px
+    width: calc(33.333% - 50px)
+    &-img
+      height: 185px
+    &-name
+      font-size: 15px
+    &-country
+      font-size: 12px
+
+  .residents-topline
+    margin-bottom: 90px
+    &:after
+      bottom: -45px
+
+  .residents-title
+    font-size: 25px
+    display: flex
+    align-items: center
 
   .s-similar
     .section-title
@@ -768,6 +816,29 @@
 
 // ≥750px
 +media-breakpoint-down(sm)
+
+  .resident-item
+    //margin: 0 20px 40px
+    width: calc(50% - 50px)
+    &-img
+      height: 200px
+
+  .filter-nav-btn
+    font-size: 14px
+    margin-left: 15px
+    margin-right: 15px
+
+  .s-residents
+    padding-top: 40px
+
+  .residents-title
+    text-align: center
+    margin-bottom: 35px
+
+  .residents-topline
+    flex-wrap: wrap
+    &>div
+      width: 100%
 
   .product-topline
     margin-top: 0
@@ -1401,6 +1472,34 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .filter-nav-btn
+    margin-left: 5px
+    margin-right: 5px
+    font-size: 13px
+
+  .resident-item
+    width: calc(100% - 160px)
+    margin-left: 80px
+    margin-right: 80px
+    display: block
+
+  .residents-help-wrap
+    padding-right: 0
+
+  .residents-wrap
+    flex-direction: column
+    align-items: center
+    width: 100%
+    left: 0
+    padding-left: 0
+
+  .s-residents
+    padding-top: 25px
+
+  .residents-title
+    font-size: 20px
+    margin-bottom: 25px
+
   .s-product
     padding-bottom: 50px
 
@@ -1743,6 +1842,11 @@
 
 
 @media screen and (max-width: 390px)
+
+  .resident-item
+    width: calc(100% - 100px)
+    margin-left: 50px
+    margin-right: 50px
 
   .similar-wrap
     flex-direction: column

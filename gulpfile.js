@@ -51,6 +51,7 @@ gulp.task('scripts', function() {
 		'app/libs/photoswipe/photoswipe-ui-default.min.js',
 		'app/libs/photoswipe/jquery.photoswipe.js',
 		'app/libs/matchHeight/jquery.matchHeight-min.js',
+		'app/libs/isotope/isotope.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
