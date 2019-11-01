@@ -6,6 +6,49 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-form
+    &-content
+      width: 295px
+      margin-right: 60px
+      h2
+        font-size: 30px
+        margin-bottom: 110px
+        &:after
+          bottom: -55px
+    &-form
+      width: calc(100% - 355px)
+
+  .form-section
+    .half-item
+      width: calc(50% - 30px)
+    .btn
+      width: 100%
+
+  .dist-item
+    width: calc(33.333% - 90px)
+    margin-right: 135px
+    &-title
+      margin-bottom: 25px
+      font-size: 18px
+    &-status
+      margin-bottom: 25px
+      font-size: 13px
+    &-desc
+      margin-bottom: 20px
+      font-size: 12px
+    &-socials
+      .soc-item
+        margin-right: 12px
+
+  .dist-topline
+    margin-bottom: 90px
+    &:after
+      bottom: -45px
+    .half-item
+      &:first-child
+        width: 360px
+      &:last-child
+        width: calc(100% - 420px)
 
   .btn-filter
     margin-bottom: 5px
@@ -259,6 +302,41 @@
 
 // ≥970px
 +media-breakpoint-down(md)
+
+  .s-form
+    .container
+      flex-wrap: wrap
+    &-content
+      width: 100%
+      text-align: center
+      margin-bottom: 40px
+      margin-right: 0
+      h2
+        margin-bottom: 80px
+        margin-top: 0
+        &:after
+          bottom: -40px
+          left: calc(50% - 50px)
+    &-form
+      width: 100%
+
+  .dist-item
+    width: calc(33.333% - 20px)
+    margin-right: 30px
+
+  .dist-topline
+    .half-item
+      &:first-child, &:last-child
+        width: calc(50% - 30px)
+      &:last-child
+        display: flex
+        flex-direction: column-reverse
+        align-items: flex-end
+        span
+          width: 290px
+        .btn
+          margin-left: 0
+          margin-top: 30px
 
   .basket-item
     &-leftrow
@@ -561,6 +639,52 @@
 // ≥750px
 +media-breakpoint-down(sm)
 
+  .s-form
+    padding-top: 50px
+    &-content
+      margin-bottom: 15px
+      h2
+        font-size: 25px
+        margin-bottom: 60px
+        &:after
+          bottom: -30px
+
+  .dist-country
+    &-title
+      font-size: 20px
+      margin-bottom: 35px
+    &-wrap
+      flex-direction: column
+      align-items: center
+
+  .dist-item
+    width: 250px
+    margin-right: 0
+    margin-bottom: 45px
+    &-title
+      font-size: 20px
+      text-align: center
+    &-status
+      font-size: 15px
+    &-desc
+      font-size: 13px
+
+
+  .dist-topline
+    flex-direction: column
+    .half-item
+      &:first-child, &:last-child
+        width: 100%
+      &:first-child
+        margin-bottom: 30px
+      &:last-child
+        text-align: center
+        span
+          width: 100%
+        .btn
+          float: none
+          margin-left: auto
+          margin-right: auto
 
   .basket-item
     flex-wrap: wrap
@@ -1071,6 +1195,34 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .s-form
+    &-content
+      h2
+        font-size: 20px
+    .form-section
+      flex-wrap: wrap
+      padding-left: 25px
+      padding-right: 25px
+      .half-item
+        width: 100%
+      .btn
+        font-size: 11px
+        padding: 12px 12px 10px
+        width: 185px
+        display: block
+        margin-left: auto
+        margin-right: auto
+
+  .s-distributors
+    padding-top: 30px
+
+  .dist-topline
+    margin-bottom: 70px
+    &:after
+      bottom: -35px
+
+  .dist-topline .half-item:last-child .btn
+    width: 245px
 
   .bas-bottom
     .half-item

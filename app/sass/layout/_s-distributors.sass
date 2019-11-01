@@ -1,0 +1,100 @@
+.s-distributors
+  padding-top: 45px
+  padding-bottom: 20px
+  line-height: 1.4
+
+.dist-topline
+  display: flex
+  justify-content: space-between
+  margin-bottom: 120px
+  position: relative
+  .half-item
+    width: calc(50% - 90px)
+    .btn
+      float: right
+      width: 290px
+      margin-left: 30px
+    span
+      &>span
+        display: block
+        color: $accent
+  &:after
+    content: ''
+    position: absolute
+    width: 100px
+    height: 2px
+    background-color: #a2a2a2
+    bottom: -60px
+    left: calc(50% - 50px)
+
+.dist-country
+  margin-bottom: 15px
+  &-title
+    font-size: 20px
+    text-align: center
+    margin-bottom: 50px
+  &-wrap
+    display: flex
+    flex-wrap: wrap
+
+.dist-item
+  margin-bottom: 30px
+  width: calc(33.333% - 110px)
+  margin-right: 165px
+  &:nth-child(3n)
+    margin-right: 0
+  &-title
+    font-size: 20px
+    margin-bottom: 30px
+  &-status
+    font-size: 16px
+    text-align: center
+    line-height: 1
+    white-space: nowrap
+    padding: 8px 8px 6px
+    border-radius: 5px
+    border-width: 2px
+    border-style: solid
+    margin-bottom: 30px
+  &-desc
+    margin-bottom: 25px
+  &-socials
+    .soc-item
+      margin-right: 15px
+      .svg
+        +mt(.3s)
+        fill: $text
+      &:last-child
+        margin-right: 0
+      &:hover
+        .svg
+          fill: $accent
+  &.gold-item
+    .dist-item-status
+      border-color: #ff9b00
+      color: #ff9b00
+    .dist-item-socials
+      .soc-item
+        &:hover
+          .svg
+            fill: #ff9b00
+  &.silver-item
+    .dist-item-status
+      border-color: #b2b2b2
+      color: #b2b2b2
+    .dist-item-socials
+      .soc-item
+        &:hover
+          .svg
+            fill: #b2b2b2
+  &.bronze-item
+    .dist-item-status
+      border-color: #e75b35
+      color: #e75b35
+    .dist-item-socials
+      .soc-item
+        &:hover
+          .svg
+            fill: #e75b35
+
+
