@@ -6,6 +6,9 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .pay-sum
+    font-size: 20px
+
   .order-items-wrap
     padding: 0
 
@@ -316,6 +319,18 @@
 
 // ≥970px
 +media-breakpoint-down(md)
+
+  .s-pay
+    padding-top: 45px
+
+  .pay-topline
+    flex-wrap: wrap
+    &>div
+      width: calc(50% - 15px)
+    .pay-btn
+      width: 100%
+      text-align: center
+      margin-top: 45px
 
   .order-item
     &-num
@@ -669,6 +684,25 @@
 
 // ≥750px
 +media-breakpoint-down(sm)
+
+  .pay-content
+    h3
+      text-align: center
+
+  .s-pay
+    padding-top: 30px
+
+  .pay-topline
+    &>div
+      width: 100%
+      text-align: center
+
+  .pay-sum
+    font-size: 18px
+    margin-bottom: 15px
+
+  .pay-btn
+    margin-top: 35px
 
   .order-sub-topline
     margin-bottom: 90px
