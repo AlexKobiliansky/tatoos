@@ -157,7 +157,7 @@
                                     <p>+7-900-800-2000</p>
                                 </div>
                                 <div class="btn-wrap">
-                                    <a href="#0" class="btn btn-accent">Редактировать</a>
+                                    <a href="#popup-form" class="btn btn-accent">Редактировать</a>
                                 </div>
                             </div>
                             <!-- /profile-item -->
@@ -169,7 +169,7 @@
                                     <p>г. Краснодар, ул. Новороссийская, 18, кв.47</p>
                                 </div>
                                 <div class="btn-wrap">
-                                    <a href="#0" class="btn btn-accent">Редактировать</a>
+                                    <a href="#popup-form" class="btn btn-accent">Редактировать</a>
                                 </div>
                             </div>
                             <!-- /profile-item -->
@@ -181,7 +181,7 @@
                                     <p>Укажите реквизиты для выставления счета</p>
                                 </div>
                                 <div class="btn-wrap">
-                                    <a href="#0" class="btn btn-accent">Редактировать</a>
+                                    <a href="#popup-form" class="btn btn-accent">Редактировать</a>
                                 </div>
                             </div>
                             <!-- /profile-item -->
@@ -354,6 +354,39 @@
     <!-- ======= FOOTER END ======= -->
 </div>
 
+
+<div class="hidden">
+    <form class="form popup-form" id="popup-form">
+
+        <h3>Контактная информация</h3>
+
+        <div class="form-labels-wrap">
+            <label>
+                <input type="text" placeholder="Имя" name="Имя" autocomplete="off"
+                       data-validation="custom"
+                       data-validation-regexp="^[a-zA-Zа-яА-Я ]{1,20}$">
+            </label>
+
+            <label>
+                <input type="text" placeholder="Адрес" name="Адрес" autocomplete="off" data-validation="required">
+            </label>
+
+            <label>
+                <input type="text" placeholder="Email" name="email" autocomplete="off"
+                       data-validation="email">
+            </label>
+
+            <label>
+                <input type="text" placeholder="Телефон" name="Телефон" autocomplete="off"
+                       data-validation="custom"
+                       data-validation-regexp="^[\+]?[(]?[0-9]{3}[)]?[-\s\.\]?[0-9]{3}[-\s\.\]?[0-9]{4,6}$">
+            </label>
+        </div>
+        <div class="btn-wrap">
+            <button type="submit" class="btn btn-accent">Сохранить</button>
+        </div>
+    </form>
+</div>
 
 <!-- ======= HTML FOR PHOTOSWIPE ======= -->
 <!-- Root element of PhotoSwipe. Must have class pswp. -->

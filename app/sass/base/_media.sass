@@ -1259,10 +1259,6 @@
       order: 2!important
       text-align: right
 
-
-
-
-
   .orderlist
     &-top
       flex-direction: column
@@ -1511,6 +1507,10 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .popup-form
+    padding: 50px
+
 
   .filter-nav-btn
     margin-left: 5px
@@ -1876,7 +1876,10 @@
 
 @media screen and (max-width: 390px)
 
-
+  .popup-form
+    padding: 50px 25px
+    .btn
+      padding: 16px 0 14px
 
   .resident-item
     width: calc(100% - 100px)

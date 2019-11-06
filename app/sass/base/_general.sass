@@ -189,3 +189,39 @@ h3
     transform: translate3d(1px, 0, 0)
 
 
+
+.popup-form
+  display: block
+  background-color: #fff
+  position: relative
+  margin-left: auto
+  margin-right: auto
+  width: 100%
+  max-width: 420px
+  padding: 50px 90px
+  border-radius: 5px
+  .form-labels-wrap
+    margin-bottom: 40px
+  .btn
+    width: 100%
+
+
+//MY_MFP_ZOOM_IN
+.my-mfp-zoom-in
+  .zoom-anim-dialog, .popup-form
+    opacity: 0
+    transition: all 0.5s ease-in-out
+    transform: scale(0.7)
+  &.mfp-ready .zoom-anim-dialog, &.mfp-ready .popup-form
+    opacity: 1
+    transform: scale(1)
+  &.mfp-removing .zoom-anim-dialog, &.mfp-removing .popup-form
+    transform: scale(0.7)
+    opacity: 0
+  &.mfp-bg
+    opacity: 0
+    transition: opacity 0.5s ease-out
+  &.mfp-ready.mfp-bg
+    opacity: .9
+  &.mfp-removing.mfp-bg
+    opacity: 0
