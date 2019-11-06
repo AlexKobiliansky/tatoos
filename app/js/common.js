@@ -110,7 +110,7 @@ $(document).ready(function(){
         loop: true,
         nav: true,
         items: 1,
-        margin: 30,
+        margin: 0,
         dots: false,
         autoHeight: false,
         navText: ['', '']
@@ -155,12 +155,8 @@ $(document).ready(function(){
 
 
     if($('#smear').length){
-        console.log('begin');
         var color = $('#smear').data('fill');
-        console.log(color);
-
         var tt = $('#smear ').find('svg');
-        console.log(tt);
         setTimeout(function () {
             $('#smear .svg').css('fill', color);
         }, 1000)
@@ -238,15 +234,43 @@ $(document).ready(function(){
         var parent = $(this).parents('.spinner-amount');
         var input = parent.find('.amount');
         var amount = input.val();
+        var btn = parent.siblings('.btn');
 
-        if(!$(this).is('.down')) {
-            amount ++
+        if (!parent.hasClass('table-amount')) {
+            if(!$(this).is('.down')) {
+                amount ++
+            } else {
+                if (amount > 1) amount --
+            }
         } else {
-            if (amount > 1) amount --
+            if(!$(this).is('.down')) {
+                amount ++
+            } else {
+                if (amount > 0) amount --
+            }
+
+            if(amount == 0) {
+                parent.hide();
+                btn.show();
+                input.val(1).attr('value', 1);
+                exit();
+            }
         }
 
         input.val(amount).attr('value', amount);
     });
+
+
+    $('.product-table .btn').on('click', function(){
+       var btn = $(this),
+           spinner = btn.siblings('.spinner-amount');
+
+       btn.hide();
+       spinner.show();
+
+    });
+
+
 
     $('.basket-item-del').on('click', function(e){
         e.preventDefault();
@@ -469,7 +493,6 @@ $(document).ready(function(){
     /**
      * end YOUTUBE SCRIPT
      */
-
 
 
 });

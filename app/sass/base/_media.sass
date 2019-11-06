@@ -6,6 +6,9 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .top-line .user-options .cart
+    margin-right: 0
+
   .residents-help-wrap
     left: 0
     padding-right: 20px
@@ -340,7 +343,14 @@
       top: 16px
 
 
+  .s-intro
+    padding-top: 78px
+
+  .p-page-head
+    padding-top: 108px
+
   .intro-logo
+    top: 108px
     left: calc(50vw - 940px/2)
 
   .intro-slider
@@ -1132,7 +1142,7 @@
     width: 100%
     .label-checkbox
       span
-        font-size: 9px
+        font-size: 11px
 
   .checkout-item
     margin-bottom: 15px
@@ -1468,6 +1478,36 @@
       margin-bottom: 20px
       padding-left: 0
       text-align: center
+
+
+@media screen and (max-width: 650px)
+
+  .video-item-wrap
+    width: 100%
+
+  .top-line
+    .call
+      span
+        display: none
+      .svg
+        margin-right: 0
+        height: 25px
+
+  .section-title
+    font-size: 25px
+    &:before
+      display: none
+    &:after
+      top: auto
+      bottom: -35px
+      right: calc(50% - 50px)
+
+  .intro-slider
+    .owl-dots
+      left: 15px
+    &:after
+      right: 15px
+
 
 // ≥480px
 +media-breakpoint-down(xs)
@@ -1809,14 +1849,7 @@
     width: calc(50% - 15px)
     margin-bottom: 30px
 
-  .section-title
-    font-size: 25px
-    &:before
-      display: none
-    &:after
-      top: auto
-      bottom: -35px
-      right: calc(50% - 50px)
+
 
   .intro-slider
     .owl-dots
@@ -1842,6 +1875,8 @@
 
 
 @media screen and (max-width: 390px)
+
+
 
   .resident-item
     width: calc(100% - 100px)
@@ -1876,9 +1911,9 @@
     font-size: 20px
 
   .cat-item
-    width: 160px
+    width: 220px
     &-img
-      height: 140px
+      height: 200px
     &-price
       span
         font-size: 15px
